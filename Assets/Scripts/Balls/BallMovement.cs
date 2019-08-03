@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BallMovement : MonoBehaviour {
-	//  Internal references
+    //  External
+    [SerializeField] BallCollisionBehaviour ballCollisionBehaviour;
+    
+    //  Internal references
 	protected Rigidbody2D rb2D;
 	protected BallAttribute _ballAtrib;
 	float centerDistance = Mathf.Infinity;
@@ -26,6 +29,11 @@ public class BallMovement : MonoBehaviour {
 			}
 		}
 	}
+
+    public void SetBehaviour(BallCollisionBehaviour ballCollisionBehaviour)
+    {
+        this.ballCollisionBehaviour = ballCollisionBehaviour;
+    }
 
 	protected void ColisionWithWall(float wallAngle) {
 		// Assumes that walls will be rotated with 0, 90, 45 and -45 degrees
