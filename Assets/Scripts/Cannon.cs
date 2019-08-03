@@ -4,7 +4,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Cannon : MonoBehaviour {
-    // Update is called once per frame
+
+    public GameObject ballPrefab;
+
     private Constants.Type selectedColor = Constants.Type.RED;
     void Update()
     {
@@ -54,6 +56,8 @@ public class Cannon : MonoBehaviour {
 
     private void Shoot() {
         Debug.Log("Canhao atirou uma bola");
+        BallMovement ball = Instantiate(ballPrefab, transform.position, Quaternion.identity).GetComponent<BallMovement>();
+        ball.SetRotation(transform.rotation);
         switch (selectedColor) {
             case Constants.Type.RED:
                 Debug.Log("vermelha");

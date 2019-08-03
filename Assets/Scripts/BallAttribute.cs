@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BallAttribute : MonoBehaviour, IColorful
 {
-    Constants.Type ballType;
+    [SerializeField] Constants.Type ballType;
 
     public Constants.Type GetColor()
     {

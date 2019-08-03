@@ -10,14 +10,15 @@ public class BallMovement : MonoBehaviour
     //  attributes
     public float speed;
 
-    // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         rb2D = GetComponent<Rigidbody2D>();
+        Debug.Log("awake");
     }
 
-    public void SetDirection(Vector3 direction)
+    public void SetRotation(Quaternion rotation)
     {
-        rb2D.velocity = speed * direction.normalized;
+        transform.rotation = rotation;
+        rb2D.velocity = speed * Vector3.right;
     }
 }

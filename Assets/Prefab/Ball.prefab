@@ -127,7 +127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a85556383d2c4b84b9bb6a5029078ddc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
+  speed: 3
 --- !u!114 &615944504714902219
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -140,6 +140,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12e1f4aa0291e1944bde4869d2433cdc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ballType: 2
 --- !u!58 &615944504714902218
 CircleCollider2D:
   m_ObjectHideFlags: 0
