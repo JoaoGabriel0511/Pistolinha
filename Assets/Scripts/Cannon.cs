@@ -86,6 +86,7 @@ public class Cannon : MonoBehaviour {
 				break;
 		}
 		if (ball) {
+            //ball.
 			ball.SetRotation(transform.rotation);
 		}
 	}
