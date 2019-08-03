@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
             Debug.LogWarning("Two instances of GameManager! Destroying gameObject");
             Destroy(gameObject);
         }
+        SceneManager.sceneLoaded += OnSceneLoaded;
     }
     
     // Start is called before the first frame update
@@ -33,16 +34,30 @@ public class GameManager : MonoBehaviour
         
     }
 
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if (scene.name.Contains("Level"))
+        {    
+            int level;
+            int.TryParse(scene.name.Remove(0, "Level".Length), out level);
+            if (level != 0)
+            {
+                SceneManager.LoadScene("GameGUI", LoadSceneMode.Additive);
+            }
+        }
+    }
+
     public void LoadScene(string scene)
     {
         if (scene.Contains("Level"))
         {
             int level;
             int.TryParse(scene.Remove(0, "Level".Length), out level);
-            if(level != 0 && level > PlayerPrefs.GetInt("LastPlayed"))
+            if(level > PlayerPrefs.GetInt("LastPlayed"))
                 PlayerPrefs.SetInt("LastPlayed", level);
+            
+            SceneManager.LoadScene(scene, LoadSceneMode.Single);
         }
-        SceneManager.LoadScene(scene, LoadSceneMode.Single);
     }
 
     public int LastPlayed()
@@ -54,6 +69,5 @@ public class GameManager : MonoBehaviour
     {
         PlayerPrefs.SetInt("LastPlayed", -1);
     }
-
 
 }
