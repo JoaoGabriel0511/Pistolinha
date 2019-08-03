@@ -19,7 +19,11 @@ public class Cannon : MonoBehaviour {
 		_spriteRenderer.color = Color.red;
 	}
 
-	void Update() {
+    private void OnCollisionEnter2D(Collision2D collision) {
+        //Debug.Log("collidiu");
+    }
+
+    void Update() {
 		if (Input.GetButtonDown("Fire")) {
 			Shoot();
 		}
