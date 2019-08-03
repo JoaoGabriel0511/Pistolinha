@@ -141,7 +141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballType: 2
-  speed: 15
+  speed: 10
 --- !u!58 &9124055206294728474
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -191,3 +191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: caf965bc130b2874b824845b570c6933, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ballCollisionBehaviour: {fileID: 0}
+  bounceEventSFX: event:/Parede/Ricochete
+  deathEventSFX: event:/Parede/Batida na parede
+  phaseEventSFX: event:/Parede/Atravessar

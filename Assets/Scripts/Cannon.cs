@@ -1,15 +1,20 @@
-﻿using UnityEngine;
+﻿using System.Collections;
+using UnityEngine;
 
 public class Cannon : MonoBehaviour {
 
 	[SerializeField] GameObject ballRedPrefab;
 	[SerializeField] GameObject ballGreenPrefab;
 	[SerializeField] GameObject ballBluePrefab;
-    [SerializeField] GameObject ballPrefab;
-    [SerializeField] BallCollisionBehaviour[] ballBehaviours;
+	[SerializeField] GameObject ballPrefab;
+	[SerializeField] BallCollisionBehaviour[] ballBehaviours;
 
 	Constants.Type selectedColor = Constants.Type.RED;
 	SpriteRenderer _spriteRenderer;
+
+	[FMODUnity.EventRef]
+	public string ShotEvent;
+	FMOD.Studio.EventInstance Shot;
 
 	void Awake() {
 		_spriteRenderer = GetComponentInChildren<SpriteRenderer>();
@@ -70,6 +75,16 @@ public class Cannon : MonoBehaviour {
 	}
 
 	private void Shoot() {
+		Shot = FMODUnity.RuntimeManager.CreateInstance(ShotEvent);
+		Shot.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
+		Shot.start();
+
+		StartCoroutine("MakeShootSFX");
+	}
+
+	IEnumerator MakeShootSFX() {
+		yield return new WaitForSeconds(0.175f);
+
 		BallMovement ball;
 		switch (selectedColor) {
 			case Constants.Type.RED:
@@ -86,8 +101,9 @@ public class Cannon : MonoBehaviour {
 				break;
 		}
 		if (ball) {
-            //ball.
 			ball.SetRotation(transform.rotation);
 		}
+
+		yield break;
 	}
 }

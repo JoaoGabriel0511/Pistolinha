@@ -25,6 +25,5 @@ public class BallAttribute : MonoBehaviour, IColorful {
 
 	void OnCollisionEnter2D(Collision2D collision2D) {
 		IColorful iColorful = collision2D.gameObject.GetComponent<IColorful>();
-		Debug.Log("Colidiu");
 	}
 }
