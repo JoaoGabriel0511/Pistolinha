@@ -32,9 +32,9 @@ public class Wall : MonoBehaviour, IColorful {
 		}
 	}
 
-	void OnTriggerEnter2D(Collision2D other) {
-		if (other.GetComponent<BallAttribute>()) {
-			BallAttribute ball = other.GetComponent<BallAttribute>();
+	void OnTriggerEnter2D(Collider2D other) {
+		if (other.gameObject.GetComponent<BallAttribute>()) {
+			BallAttribute ball = other.gameObject.GetComponent<BallAttribute>();
 			if (ball.GetColor() != _color) {
 				_color = ball.GetColor();
 				UpdateColor();
