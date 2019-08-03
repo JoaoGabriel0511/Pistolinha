@@ -142,7 +142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballType: 2
-  speed: 15
+  speed: 10
 --- !u!58 &9124055206294728474
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -193,22 +193,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballCollisionBehaviour: {fileID: 0}
---- !u!95 &4607949376294908440
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9124055206294728468}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b5d8d42e80efa6747b8cf065c3f45f2f, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  bounceEventSFX: event:/Parede/Ricochete
+  deathEventSFX: event:/Parede/Batida na parede
+  phaseEventSFX: event:/Parede/Atravessar

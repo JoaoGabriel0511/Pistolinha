@@ -3,17 +3,32 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BallMovement : MonoBehaviour {
-    //  External
-    [SerializeField] BallCollisionBehaviour ballCollisionBehaviour;
-    
-    //  Internal references
+	//  External
+	[SerializeField] BallCollisionBehaviour ballCollisionBehaviour;
+
+	//  Internal references
 	protected Rigidbody2D rb2D;
 	protected BallAttribute _ballAtrib;
+	AudioSource _audioSource;
+	AudioClip _audioClip;
 	float centerDistance = Mathf.Infinity;
+
+	[FMODUnity.EventRef]
+	public string bounceEventSFX;
+	FMOD.Studio.EventInstance _bounceSFX;
+
+	[FMODUnity.EventRef]
+	public string deathEventSFX;
+	FMOD.Studio.EventInstance _deathSFX;
+
+	[FMODUnity.EventRef]
+	public string phaseEventSFX;
+	FMOD.Studio.EventInstance _phaseSFX;
 
 	protected void Awake() {
 		rb2D = GetComponent<Rigidbody2D>();
 		_ballAtrib = GetComponent<BallAttribute>();
+		_audioSource = GetComponent<AudioSource>();
 	}
 
 	public virtual void OnTriggerEnter2D(Collider2D other) {
@@ -30,10 +45,9 @@ public class BallMovement : MonoBehaviour {
 		}
 	}
 
-    public void SetBehaviour(BallCollisionBehaviour ballCollisionBehaviour)
-    {
-        this.ballCollisionBehaviour = ballCollisionBehaviour;
-    }
+	public void SetBehaviour(BallCollisionBehaviour ballCollisionBehaviour) {
+		this.ballCollisionBehaviour = ballCollisionBehaviour;
+	}
 
 	protected void ColisionWithWall(float wallAngle) {
 		// Assumes that walls will be rotated with 0, 90, 45 and -45 degrees
@@ -69,6 +83,10 @@ public class BallMovement : MonoBehaviour {
 		transform.position = wall.transform.position;
 		ColisionWithWall(wall.Angle);
 
+		_bounceSFX = FMODUnity.RuntimeManager.CreateInstance(bounceEventSFX);
+		_bounceSFX.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
+		_bounceSFX.start();
+
 		yield return new WaitForSeconds(2 * dt);
 		_ballAtrib.SetColiding(false);
 	}
@@ -83,7 +101,19 @@ public class BallMovement : MonoBehaviour {
 		yield return new WaitForSeconds(dt);
 		transform.position = wall.transform.position;
 		_ballAtrib.SetColiding(false);
+
+		_deathSFX = FMODUnity.RuntimeManager.CreateInstance(deathEventSFX);
+		_deathSFX.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
+		_deathSFX.start();
+
 		Destroy(gameObject);
+	}
+
+	protected IEnumerator MakePhase() {
+		_phaseSFX = FMODUnity.RuntimeManager.CreateInstance(phaseEventSFX);
+		_phaseSFX.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
+		_phaseSFX.start();
+		yield break;
 	}
 
 	void OnBecameInvisible() {

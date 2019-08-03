@@ -213,7 +213,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballCollisionBehaviour: {fileID: 0}
---- !u!95 &-6805156391030032080
+  bounceEventSFX: event:/Parede/Ricochete
+  deathEventSFX: event:/Parede/Batida na parede
+  phaseEventSFX: event:/Parede/Atravessar
+--- !u!95 &811679258641371923
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0

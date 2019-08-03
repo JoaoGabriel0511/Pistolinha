@@ -6,6 +6,10 @@ public class Wall : MonoBehaviour, IColorful {
 	[SerializeField] Constants.Type _color;
 	SpriteRenderer _spriteRenderer;
 
+	[FMODUnity.EventRef]
+	public string colorChangeEventSFX;
+	FMOD.Studio.EventInstance _colorChangeSFX;
+
 	public float Angle {
 		get { return transform.rotation.eulerAngles.z; }
 	}

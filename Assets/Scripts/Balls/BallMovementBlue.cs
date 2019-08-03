@@ -7,6 +7,7 @@ public class BallMovementBlue : BallMovement {
 			if (wall != null) {
 				switch (wall.GetColor()) {
 					case Constants.Type.BLUE:
+						StartCoroutine("MakePhase");
 						break;
 					case Constants.Type.GREEN:
 						StartCoroutine("MakeColision", wall);

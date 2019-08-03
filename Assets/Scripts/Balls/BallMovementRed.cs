@@ -10,6 +10,7 @@ public class BallMovementRed : BallMovement {
 						StartCoroutine("MakeColision", wall);
 						break;
 					case Constants.Type.BLUE:
+						StartCoroutine("MakePhase");
 						break;
 					case Constants.Type.GREEN:
 						StartCoroutine("MakeDeath", wall);
