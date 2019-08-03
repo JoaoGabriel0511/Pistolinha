@@ -6,6 +6,11 @@ public class Wall : MonoBehaviour, IColorful {
 	[SerializeField] Constants.Type _color;
 	SpriteRenderer _spriteRenderer;
 
+    public Vector3 Angle
+    {
+        get { return transform.rotation.eulerAngles; }
+    }
+
 	void Awake() {
 		_spriteRenderer = GetComponent<SpriteRenderer>();
 		if (!_spriteRenderer) {
@@ -32,7 +37,7 @@ public class Wall : MonoBehaviour, IColorful {
 		}
 	}
 
-	void OnTriggerEnter2D(Collider2D other) {
+    void OnTriggerEnter2D(Collider2D other) {
 		if (other.gameObject.GetComponent<BallAttribute>()) {
 			BallAttribute ball = other.gameObject.GetComponent<BallAttribute>();
 			if (ball.GetColor() != _color) {
@@ -41,4 +46,17 @@ public class Wall : MonoBehaviour, IColorful {
 			}
 		}
 	}
+    /*
+    void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.GetComponent<BallAttribute>())
+        {
+            BallAttribute ball = other.gameObject.GetComponent<BallAttribute>();
+            if (ball.GetColor() != _color)
+            {
+                _color = ball.GetColor();
+                UpdateColor();
+            }
+        }
+    }*/
 }
