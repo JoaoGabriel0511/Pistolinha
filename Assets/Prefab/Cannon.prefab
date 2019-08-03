@@ -44,9 +44,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4fb31889dbc3cb04888880d5de61e05f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ballRedPrefab: {fileID: 0}
-  ballGreenPrefab: {fileID: 0}
-  ballBluePrefab: {fileID: 0}
+  ballRedPrefab: {fileID: 8000971818532661102, guid: faab64b50d3b17e4ba96bf86c7633cea,
+    type: 3}
+  ballGreenPrefab: {fileID: 8775305410098919724, guid: 2b68d0799ec731d46b7ff16b7a354236,
+    type: 3}
+  ballBluePrefab: {fileID: 9124055206294728468, guid: a38ba7af790163040b0812e7f2b0e9cb,
+    type: 3}
 --- !u!1 &3506475267221629025
 GameObject:
   m_ObjectHideFlags: 0

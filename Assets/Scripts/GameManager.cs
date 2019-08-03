@@ -35,7 +35,24 @@ public class GameManager : MonoBehaviour
 
     public void LoadScene(string scene)
     {
+        if (scene.Contains("Level"))
+        {
+            int level;
+            int.TryParse(scene.Remove(0, "Level".Length), out level);
+            if(level != 0 && level > PlayerPrefs.GetInt("LastPlayed"))
+                PlayerPrefs.SetInt("LastPlayed", level);
+        }
         SceneManager.LoadScene(scene, LoadSceneMode.Single);
+    }
+
+    public int LastPlayed()
+    {
+        return PlayerPrefs.GetInt("LastPlayed", -1);
+    }
+
+    public void ClearProgress()
+    {
+        PlayerPrefs.SetInt("LastPlayed", -1);
     }
 
 
