@@ -1050,8 +1050,7 @@ PrefabInstance:
         type: 3}
       propertyPath: ballPrefab
       value: 
-      objectReference: {fileID: 615944504714902212, guid: 1d3e549cdbfd23749a9000bac1bef8fa,
-        type: 3}
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3506475267221629031, guid: 1ac6cdf2898002b41ae6336f7cc99b8e, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1ac6cdf2898002b41ae6336f7cc99b8e, type: 3}
