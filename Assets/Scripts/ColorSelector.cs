@@ -10,18 +10,6 @@ public class ColorSelector : MonoBehaviour
     Animator animator;
     public GameObject panel;
 
-    public void SwitchToGreen() {
-        //cannon.SwitchToGreen(); 
-    }
-
-    public void SwitchToRed() {
-        //cannon.SwitchToRed(); 
-    }
-
-    public void SwitchToBlue() {
-        //cannon.SwitchToBlue();
-    }
-
     public void ToggleCollorSelector() {
         animator = panel.GetComponent<Animator>();
         TextMeshProUGUI text = GetComponentInChildren<TextMeshProUGUI>();

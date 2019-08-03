@@ -20,7 +20,7 @@ public class Cannon : MonoBehaviour {
 	}
 
     private void OnCollisionEnter2D(Collision2D collision) {
-        //Debug.Log("collidiu");
+
     }
 
     void Update() {
