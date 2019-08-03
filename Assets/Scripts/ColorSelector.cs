@@ -11,15 +11,15 @@ public class ColorSelector : MonoBehaviour
     public GameObject panel;
 
     public void SwitchToGreen() {
-        cannon.SwitchToGreen(); 
+        //cannon.SwitchToGreen(); 
     }
 
     public void SwitchToRed() {
-        cannon.SwitchToRed(); 
+        //cannon.SwitchToRed(); 
     }
 
     public void SwitchToBlue() {
-        cannon.SwitchToBlue();
+        //cannon.SwitchToBlue();
     }
 
     public void ToggleCollorSelector() {
