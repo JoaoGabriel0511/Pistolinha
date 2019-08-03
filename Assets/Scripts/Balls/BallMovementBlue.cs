@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 
 public class BallMovementBlue : BallMovement {
+    /*
 	public override void OnTriggerEnter2D(Collider2D other) {
 		if (other.GetComponent<IColorful>() != null) {
 			Wall wall = other.GetComponent<Wall>();
@@ -17,5 +18,5 @@ public class BallMovementBlue : BallMovement {
 				}
 			}
 		}
-	}
+	}*/
 }
