@@ -2,7 +2,10 @@
 using UnityEngine.Events;
 
 public class BallMovement : MonoBehaviour {
-	//  Internal references
+    //  External
+    [SerializeField] BallCollisionBehaviour ballCollisionBehaviour;
+    
+    //  Internal references
 	protected Rigidbody2D rb2D;
 	protected BallAttribute _ballAtrib;
     float centerDistance = Mathf.Infinity;
@@ -25,6 +28,11 @@ public class BallMovement : MonoBehaviour {
 			}
 		}
 	}
+
+    public void SetBehaviour(BallCollisionBehaviour ballCollisionBehaviour)
+    {
+        this.ballCollisionBehaviour = ballCollisionBehaviour;
+    }
     /*
     public virtual void OnTriggerStay2D(Collider2D other)
     {

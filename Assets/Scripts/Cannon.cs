@@ -5,6 +5,9 @@ public class Cannon : MonoBehaviour {
 	[SerializeField] GameObject ballRedPrefab;
 	[SerializeField] GameObject ballGreenPrefab;
 	[SerializeField] GameObject ballBluePrefab;
+    [SerializeField] GameObject ballPrefab;
+    [SerializeField] BallCollisionBehaviour[] ballBehaviours;
+
 	Constants.Type selectedColor = Constants.Type.RED;
 	SpriteRenderer _spriteRenderer;
 
@@ -54,6 +57,7 @@ public class Cannon : MonoBehaviour {
 				break;
 		}
 		if (ball) {
+            //ball.
 			ball.SetRotation(transform.rotation);
 		}
 	}
