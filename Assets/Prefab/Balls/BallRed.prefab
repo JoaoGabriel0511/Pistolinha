@@ -126,7 +126,7 @@ GameObject:
   - component: {fileID: 8000971818532661088}
   - component: {fileID: 8000971818532661103}
   - component: {fileID: 7930264195654268080}
-  - component: {fileID: 811679258641371923}
+  - component: {fileID: -6805156391030032080}
   m_Layer: 0
   m_Name: BallRed
   m_TagString: Untagged
@@ -212,7 +212,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c92ac72083bc6714c9a82674fa0f232b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!95 &811679258641371923
+  ballCollisionBehaviour: {fileID: 0}
+--- !u!95 &-6805156391030032080
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
@@ -222,7 +223,7 @@ Animator:
   m_GameObject: {fileID: 8000971818532661102}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b5d8d42e80efa6747b8cf065c3f45f2f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
