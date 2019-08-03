@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 
 public class BallMovementBlue : BallMovement {
-    /*
 	public override void OnTriggerEnter2D(Collider2D other) {
 		if (other.GetComponent<IColorful>() != null) {
 			Wall wall = other.GetComponent<Wall>();
@@ -10,13 +9,13 @@ public class BallMovementBlue : BallMovement {
 					case Constants.Type.BLUE:
 						break;
 					case Constants.Type.GREEN:
-						ColisionWithWall(wall.Angle);
+						StartCoroutine("MakeColision", wall);
 						break;
 					case Constants.Type.RED:
-						Destroy(gameObject);
+						StartCoroutine("MakeDeath", wall);
 						break;
 				}
 			}
 		}
-	}*/
+	}
 }
