@@ -1,0 +1,667 @@
+fileFormatVersion: 2
+guid: edae0199958b8aa4ea93db773c33c5ce
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4859872627134962335
+    second: plopverde_0
+  - first:
+      213: 8042943040349894229
+    second: plopverde_1
+  - first:
+      213: -5307821514251255182
+    second: plopverde_2
+  - first:
+      213: 1489139526906793327
+    second: plopverde_3
+  - first:
+      213: -4883485553164435446
+    second: plopverde_4
+  - first:
+      213: 1214041759789679058
+    second: plopverde_5
+  - first:
+      213: 5965584458278852338
+    second: plopverde_6
+  - first:
+      213: -3230320919772623693
+    second: plopverde_8
+  - first:
+      213: -3183355818868798759
+    second: plopverde_10
+  - first:
+      213: -1998862629015479880
+    second: plopverde_12
+  - first:
+      213: 5449628400068008493
+    second: plopverde_14
+  - first:
+      213: -5579455788554847310
+    second: plopverde_16
+  - first:
+      213: 4735589455443050295
+    second: plopverde_17
+  - first:
+      213: -3532866435898879431
+    second: plopverde_18
+  - first:
+      213: -8674566795530500750
+    second: plopverde_19
+  - first:
+      213: -2836595462375611129
+    second: plopverde_24
+  - first:
+      213: 4516814822926813947
+    second: plopverde_30
+  - first:
+      213: -9213771482419677601
+    second: plopverde_31
+  - first:
+      213: -6100648391304221258
+    second: plopverde_38
+  - first:
+      213: -4830760604866777647
+    second: plopverde_40
+  - first:
+      213: -4356958918967396559
+    second: plopverde_41
+  - first:
+      213: 2112869725784185544
+    second: plopverde_49
+  - first:
+      213: -6998033772430233781
+    second: plopverde_51
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: plopverde_0
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 1977
+        width: 13
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09255d6c76ca31b4aa60af53372284b5
+      internalID: 4859872627134962335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopverde_1
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 1639
+        width: 386
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 398dd3be815e5f544ae725246e954cff
+      internalID: 8042943040349894229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopverde_2
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 1646
+        width: 328
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70ca8331b63adbb41bcf6a6950a75cbe
+      internalID: -5307821514251255182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopverde_3
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 1781
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce7e226a799bbca4fb999134b2bc7a0e
+      internalID: 1489139526906793327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopverde_4
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 1652
+        width: 409
+        height: 317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ffe79bdcece58a4aa601e177031b9d2
+      internalID: -4883485553164435446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopverde_5
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 1189
+        width: 209
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7da410dc6479d1848a33fac2802e48e6
+      internalID: 1214041759789679058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopverde_6
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 1165
+        width: 243
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05eaefef6a9db5d458c4a9296dcedf3f
+      internalID: 5965584458278852338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopverde_8
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 1175
+        width: 277
+        height: 406
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa4e7b15ce6956a4fbff6e8c7a51fae3
+      internalID: -3230320919772623693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopverde_10
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 1488
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeb0537e6d9cf074587062c45b36700a
+      internalID: -3183355818868798759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopverde_12
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 1275
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3872fbdea1dc4a4cae2c2354187b639
+      internalID: -1998862629015479880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopverde_14
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 1275
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d27ec79b46d428942a5589ecd456edc1
+      internalID: 5449628400068008493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopverde_16
+      rect:
+        serializedVersion: 2
+        x: 1470
+        y: 1245
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6604d26fbbbb7dc4396a0e6c1843e4cc
+      internalID: -5579455788554847310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopverde_17
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 724
+        width: 282
+        height: 407
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40746896627712b4fa9002f4367cf940
+      internalID: 4735589455443050295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopverde_18
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 1074
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7627fae3401c71046a3f9afcc3d1f50e
+      internalID: -3532866435898879431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopverde_19
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 704
+        width: 319
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9b5de637b89ffb419b2f464b0ec410e
+      internalID: -8674566795530500750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopverde_24
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 1041
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3106afdd522e14546b0226d4bafa704b
+      internalID: -2836595462375611129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopverde_30
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 704
+        width: 389
+        height: 457
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b69d80125a1fe0541a6eee3184ab5f55
+      internalID: 4516814822926813947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopverde_31
+      rect:
+        serializedVersion: 2
+        x: 1551
+        y: 1012
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 326983fb65a4ef6448aeccffe8464e40
+      internalID: -9213771482419677601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopverde_38
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 787
+        width: 37
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb3ca2db74834b44595e962da1b1ea86
+      internalID: -6100648391304221258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopverde_40
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 825
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e7de04bac1aa7341856db859ccec09b
+      internalID: -4830760604866777647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopverde_41
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 823
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33304a9ec5c4da342b8b53ed69784ff5
+      internalID: -4356958918967396559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopverde_49
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 757
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8fa17d81c63fd4429cb44b67b71b80a
+      internalID: 2112869725784185544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopverde_51
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 708
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 176ff7895d876af49a9690ab0fcd1f34
+      internalID: -6998033772430233781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

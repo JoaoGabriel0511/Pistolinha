@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5669269439912071265}
   - component: {fileID: 4874223038645432526}
   - component: {fileID: 3239727881873434888}
+  - component: {fileID: 5754925572353692166}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -48,7 +49,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a85556383d2c4b84b9bb6a5029078ddc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ballCollisionBehaviour: {fileID: 0}
   bounceEventSFX: event:/Parede/Ricochete
   deathEventSFX: event:/Parede/Batida na parede
   phaseEventSFX: event:/Parede/Atravessar
@@ -65,7 +65,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballType: 2
-  speed: 10
+  speed: 7
 --- !u!58 &5669269439912071265
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -199,6 +199,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &5754925572353692166
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4765153773408352399}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b5d8d42e80efa6747b8cf065c3f45f2f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4801382489695081218
 GameObject:
   m_ObjectHideFlags: 0

@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BallMovement : MonoBehaviour {
-	//  External
-	[SerializeField] BallCollisionBehaviour ballCollisionBehaviour;
 
 	//  Internal references
 	protected Rigidbody2D rb2D;
@@ -45,15 +43,10 @@ public class BallMovement : MonoBehaviour {
 		}
 	}
 
-    public void OnTriggerExit2D(Collider2D collision) {
-        GetComponentInChildren<Animator>().SetBool("hitingWall", false);
-        GetComponentInChildren<Animator>().SetBool("explodeWall", false);
-    }
-
-    public void SetBehaviour(BallCollisionBehaviour ballCollisionBehaviour)
-    {
-        this.ballCollisionBehaviour = ballCollisionBehaviour;
-    }
+	public void OnTriggerExit2D(Collider2D collision) {
+		GetComponentInChildren<Animator>().SetBool("hitingWall", false);
+		GetComponentInChildren<Animator>().SetBool("explodeWall", false);
+	}
 
 	protected void ColisionWithWall(float wallAngle) {
 		// Assumes that walls will be rotated with 0, 90, 45 and -45 degrees
@@ -95,7 +88,7 @@ public class BallMovement : MonoBehaviour {
 		_bounceSFX.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
 		_bounceSFX.start();
 
-		yield return new WaitForSeconds(2 * dt);
+		yield return new WaitForSeconds(dt / 2);
 		_ballAtrib.SetColiding(false);
 	}
 
@@ -109,7 +102,12 @@ public class BallMovement : MonoBehaviour {
 		yield return new WaitForSeconds(dt);
 		transform.position = wall.transform.position;
 		_ballAtrib.SetColiding(false);
-        GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
+		GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
+
+		_deathSFX = FMODUnity.RuntimeManager.CreateInstance(deathEventSFX);
+		_deathSFX.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
+		_deathSFX.start();
+
 		// Destroy(gameObject);
 	}
 
