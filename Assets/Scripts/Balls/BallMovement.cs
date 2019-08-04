@@ -76,7 +76,7 @@ public class BallMovement : MonoBehaviour {
 
 		yield return new WaitForSeconds(2 * dt);
 		_ballAtrib.SetColiding(false);
-	}
+    }
 
 	protected IEnumerator MakeDeath(Wall wall) {
 		if (_ballAtrib.IsColiding()) {
