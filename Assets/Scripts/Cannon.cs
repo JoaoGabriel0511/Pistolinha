@@ -48,56 +48,30 @@ public class Cannon : MonoBehaviour {
 		}
 	}
 
-	void Update() {
+    private void OnCollisionEnter2D(Collision2D collision) {
+
+    }
+
+    void Update() {
 		if (Input.GetButtonDown("Fire")) {
 			Shoot();
 		}
-		if (Input.GetButtonDown("NextBall")) {
-			SwitchToNextBall();
-		}
-		if (Input.GetButtonDown("PreviousBall")) {
-			SwitchToPreviousBall();
-		}
 	}
 
-	private void SwitchToPreviousBall() {
+	public void SwitchToRed() {
+        selectedColor = Constants.Type.RED;
+        _spriteRenderer.color = Color.red;
+    }
 
-		switch (selectedColor) {
-			case Constants.Type.RED:
-				selectedColor = Constants.Type.GREEN;
-				_spriteRenderer.color = Color.green;
-				break;
-			case Constants.Type.BLUE:
-				selectedColor = Constants.Type.RED;
-				_spriteRenderer.color = Color.red;
-				break;
-			case Constants.Type.GREEN:
-				selectedColor = Constants.Type.BLUE;
-				_spriteRenderer.color = Color.blue;
-				break;
-			default:
-				break;
-		}
+	public void SwitchToGreen() {
+        selectedColor = Constants.Type.GREEN;
+        _spriteRenderer.color = Color.green;
 	}
 
-	private void SwitchToNextBall() {
-		switch (selectedColor) {
-			case Constants.Type.RED:
-				selectedColor = Constants.Type.BLUE;
-				_spriteRenderer.color = Color.blue;
-				break;
-			case Constants.Type.BLUE:
-				selectedColor = Constants.Type.GREEN;
-				_spriteRenderer.color = Color.green;
-				break;
-			case Constants.Type.GREEN:
-				selectedColor = Constants.Type.RED;
-				_spriteRenderer.color = Color.red;
-				break;
-			default:
-				break;
-		}
-	}
+    public void SwitchToBlue() {
+        selectedColor = Constants.Type.BLUE;
+        _spriteRenderer.color = Color.blue;
+    }
 
 	private void Shoot() {
 		Shot = FMODUnity.RuntimeManager.CreateInstance(ShotEvent);

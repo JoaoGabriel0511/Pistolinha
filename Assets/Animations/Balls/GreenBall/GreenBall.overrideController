@@ -1,0 +1,15 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!221 &22100000
+AnimatorOverrideController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GreenBall
+  m_Controller: {fileID: 9100000, guid: b5d8d42e80efa6747b8cf065c3f45f2f, type: 2}
+  m_Clips:
+  - m_OriginalClip: {fileID: 7400000, guid: 7687066b30097ff4aba3efc88fbebca3, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: 4cfb2bef41c739c4a98e615768e99a6b, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: 3b0c44d203deb9e44ab4b6ace05ba6ef, type: 2}
+    m_OverrideClip: {fileID: 7400000, guid: a6297d6c5dfee194facb7bf70ec7b7df, type: 2}

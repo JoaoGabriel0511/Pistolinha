@@ -50,8 +50,12 @@ MonoBehaviour:
     type: 3}
   ballBluePrefab: {fileID: 9124055206294728468, guid: a38ba7af790163040b0812e7f2b0e9cb,
     type: 3}
-  ballPrefab: {fileID: 0}
-  ballBehaviours: []
+  ballPrefab: {fileID: 4765153773408352399, guid: 1d3e549cdbfd23749a9000bac1bef8fa,
+    type: 3}
+  ballBehaviours:
+  - {fileID: 11400000, guid: bfc1f0a7e7803ae4b947365a9a96b24b, type: 2}
+  - {fileID: 11400000, guid: 6181c7a03d203464282f186aab217843, type: 2}
+  - {fileID: 11400000, guid: 20bdaa7997e91e743a1292d571343f74, type: 2}
   ShotEvent: event:/Tiro 2
 --- !u!1 &3506475267221629025
 GameObject:

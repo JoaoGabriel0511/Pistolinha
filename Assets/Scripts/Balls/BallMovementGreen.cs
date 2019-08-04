@@ -7,11 +7,13 @@ public class BallMovementGreen : BallMovement {
 			if (wall != null) {
 				switch (wall.GetColor()) {
 					case Constants.Type.GREEN:
-						StartCoroutine("MakeDeath", wall);
+                        GetComponentInChildren<Animator>().SetBool("explodeWall", true);
+                        StartCoroutine("MakeDeath", wall);
 						break;
 					case Constants.Type.RED:
 						StartCoroutine("MakeColision", wall);
-						break;
+                        GetComponentInChildren<Animator>().SetBool("hitingWall", true);
+                        break;
 					case Constants.Type.BLUE:
 						StartCoroutine("MakePhase");
 						break;
