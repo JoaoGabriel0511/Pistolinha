@@ -126,7 +126,6 @@ GameObject:
   - component: {fileID: 9124055206294728474}
   - component: {fileID: 9124055206294728469}
   - component: {fileID: 7656416405885030870}
-  - component: {fileID: 4607949376294908440}
   m_Layer: 0
   m_Name: BallBlue
   m_TagString: Untagged
@@ -213,22 +212,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballCollisionBehaviour: {fileID: 0}
---- !u!95 &4607949376294908440
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9124055206294728468}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 22100000, guid: aeca812d4f07ca64faa405b1b740361c, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
