@@ -8,7 +8,7 @@
 [WRN] SystemI::init                            : Output requires a sample rate of 44100Hz, resampling will occur.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 81920, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000001DE29B165D8 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000001AFE02078A8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -22,32 +22,6 @@
 [LOG] Manager::readBank                        : fileversion = 121, compatVersion = 119 (oldest = 44, newest = 121)
 [LOG] Manager::readBank                        : fileversion = 121, compatVersion = 119 (oldest = 44, newest = 121)
 [LOG] Manager::readBank                        : fileversion = 121, compatVersion = 119 (oldest = 44, newest = 121)
-[LOG] SoundI::release                          :  (000001DE29C48B18)
-[LOG] SoundI::release                          :     Impacts_Simple_PSEM.149 (000001DE2351E918)
-[LOG] SoundI::release                          :  (000001DE29C486C8)
-[LOG] SoundI::release                          :     Nilodyian (000001DE2351FC98)
-[LOG] SoundI::release                          :  (000001DE29C45198)
-[LOG] SoundI::release                          :     Gulp_PSEM.133 (000001DE2351C6F8)
-[LOG] SoundI::release                          :  (000001DE29C45A38)
-[LOG] SoundI::release                          :     Household_Door_Close_PSEM.145 (000001DE2351DF58)
-[LOG] SoundI::release                          :  (000001DE29C45BA8)
-[LOG] SoundI::release                          :     Chopping_Wood_Loop_PSEM.066 (000001DE2351F478)
-[LOG] SoundI::release                          :  (000001DE29C45308)
-[LOG] SoundI::release                          :     Bullet_Impact_Windshield_PSEM.045 (000001DE2351FE38)
-[LOG] SoundI::release                          :  (000001DE29C45028)
-[LOG] SoundI::release                          :     RubberBandSnap_S08FO.2219 (000001DE2351EF98)
-[LOG] SoundI::release                          :  (000001DE29C48838)
-[LOG] SoundI::release                          :     Pop_Cork_PSEM.199 (000001DE2351F2D8)
-[LOG] SoundI::release                          :  (000001DE29C48278)
-[LOG] SoundI::release                          :     Bertonisius (000001DE2351E298)
-[LOG] Thread::callback                         : FMOD Studio update thread finished.
-[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
-[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
-[LOG] LiveUpdate::release                      : 
-[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
-[LOG] Thread::callback                         : FMOD stream thread finished.
-[LOG] Thread::callback                         : FMOD mixer thread finished.
-[LOG] SystemI::close                           : Closed.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
