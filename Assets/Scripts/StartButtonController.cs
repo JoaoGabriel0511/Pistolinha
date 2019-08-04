@@ -7,7 +7,7 @@ public class StartButtonController : MonoBehaviour
 {
     public void OnClick()
     {
-        if(GameManager.Instance.LastPlayed() == -1)
+        if(GameManager.Instance.LastPlayed() == 0)
         {
             GameManager.Instance.LoadScene("Level1");
         }

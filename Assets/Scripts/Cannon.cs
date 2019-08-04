@@ -22,6 +22,8 @@ public class Cannon : MonoBehaviour {
 
 	[SerializeField] int _typeVar = (int)Constants.Type.RED;
 
+    ColorMunition[] colorMunition;
+
 	void Awake() {
 		_spriteRenderer = GetComponentInChildren<SpriteRenderer>();
 		if (!_spriteRenderer) {
@@ -47,9 +49,44 @@ public class Cannon : MonoBehaviour {
 			Debug.Log("No color enabled in the cannon!");
 		}
 	}
+    /*
+    void OnEnable()
+    {
+        colorMunition = FindObjectsOfType<ColorMunition>();
+        foreach (ColorMunition cl in colorMunition)
+        {
+            cl.clickedEvent.AddListener(ChangeColor);
+        }
+    }
+
+    void OnDisable()
+    {
+        foreach (ColorMunition cl in colorMunition)
+        {
+            cl.clickedEvent.RemoveListener(ChangeColor);
+        }
+    }*/
 
     private void OnCollisionEnter2D(Collision2D collision) {
 
+    }
+
+    public void ChangeColor(Constants.Type type)
+    {
+        switch (type)
+        {
+            case Constants.Type.BLUE:
+                SwitchToBlue();
+                break;
+            case Constants.Type.RED:
+                SwitchToRed();
+                break;
+            case Constants.Type.GREEN:
+                SwitchToGreen();
+                break;
+            default:
+                break;
+        }
     }
 
     void Update() {
