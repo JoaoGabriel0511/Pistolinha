@@ -10,10 +10,12 @@ public class BallMovementBlue : BallMovement {
 						break;
 					case Constants.Type.GREEN:
 						StartCoroutine("MakeColision", wall);
+                        GetComponentInChildren<Animator>().SetBool("hitingWall", true);
 						break;
 					case Constants.Type.RED:
 						StartCoroutine("MakeDeath", wall);
-						break;
+                        GetComponentInChildren<Animator>().SetBool("hitingWall", true);
+                        break;
 				}
 			}
 		}

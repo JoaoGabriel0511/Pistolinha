@@ -30,6 +30,10 @@ public class BallMovement : MonoBehaviour {
 		}
 	}
 
+    public void OnTriggerExit2D(Collider2D collision) {
+        GetComponentInChildren<Animator>().SetBool("hitingWall", false);
+    }
+
     public void SetBehaviour(BallCollisionBehaviour ballCollisionBehaviour)
     {
         this.ballCollisionBehaviour = ballCollisionBehaviour;

@@ -1,0 +1,427 @@
+fileFormatVersion: 2
+guid: c83cfd7a6bf651a45ae02c72e76c7a52
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2983591541968671384
+    second: "90\xBAblobverde_0"
+  - first:
+      213: -4156116222012002940
+    second: "90\xBAblobverde_1"
+  - first:
+      213: 6442715199592961204
+    second: "90\xBAblobverde_2"
+  - first:
+      213: -5961931567265892238
+    second: "90\xBAblobverde_3"
+  - first:
+      213: 7620142920012233176
+    second: "90\xBAblobverde_4"
+  - first:
+      213: -2091456269786166253
+    second: "90\xBAblobverde_5"
+  - first:
+      213: -2116632659902286443
+    second: "90\xBAblobverde_6"
+  - first:
+      213: -3316754028052703973
+    second: "90\xBAblobverde_7"
+  - first:
+      213: 4069984939904531947
+    second: "90\xBAblobverde_8"
+  - first:
+      213: 6160399797838977194
+    second: "90\xBAblobverde_9"
+  - first:
+      213: -147579991955711554
+    second: "90\xBAblobverde_10"
+  - first:
+      213: 579347962145886166
+    second: "90\xBAblobverde_11"
+  - first:
+      213: -9162661277543686039
+    second: "90\xBAblobverde_12"
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "90\xBAblobverde_0"
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 1977
+        width: 13
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ff5da4801bc01340a3f2a3a8382f827
+      internalID: -2983591541968671384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "90\xBAblobverde_1"
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 1639
+        width: 386
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11b205f0739bb6b48b2c8b4892fc323d
+      internalID: -4156116222012002940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "90\xBAblobverde_2"
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 1646
+        width: 328
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c23fd7bc68258d94c9290926d78ba4dd
+      internalID: 6442715199592961204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "90\xBAblobverde_3"
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 1781
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 118a38ac8af3af64f8593fa60ad42784
+      internalID: -5961931567265892238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "90\xBAblobverde_4"
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 1652
+        width: 409
+        height: 317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed8bb0a183d92c8468af3f8d29c631b3
+      internalID: 7620142920012233176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "90\xBAblobverde_5"
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 1189
+        width: 209
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd3025d694aa78442bd1420f49a7e84d
+      internalID: -2091456269786166253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "90\xBAblobverde_6"
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 1165
+        width: 210
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5a61d27d51434c4a991a9d6f8d4385f
+      internalID: -2116632659902286443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "90\xBAblobverde_7"
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 1275
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7f86ca25334e614d97a3cdad083d93a
+      internalID: -3316754028052703973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "90\xBAblobverde_8"
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 1190
+        width: 334
+        height: 377
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b79748114faf0a140acf6cb3484fe8d3
+      internalID: 4069984939904531947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "90\xBAblobverde_9"
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 756
+        width: 409
+        height: 313
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5eb8f2fcccbf95241bf66fe902c26841
+      internalID: 6160399797838977194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "90\xBAblobverde_10"
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 870
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0185a5ff90229ea46b734eec90ad5040
+      internalID: -147579991955711554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "90\xBAblobverde_11"
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 732
+        width: 396
+        height: 354
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 205cfe55644d910478b92401d040e741
+      internalID: 579347962145886166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "90\xBAblobverde_12"
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 871
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7792849b25ea2ee4e87ee9f6426d46a3
+      internalID: -9162661277543686039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

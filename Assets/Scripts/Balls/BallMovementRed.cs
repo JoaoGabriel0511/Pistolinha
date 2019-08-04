@@ -8,12 +8,14 @@ public class BallMovementRed : BallMovement {
 				switch (wall.GetColor()) {
 					case Constants.Type.RED:
 						StartCoroutine("MakeColision", wall);
-						break;
+                        GetComponentInChildren<Animator>().SetBool("hitingWall", true);
+                        break;
 					case Constants.Type.BLUE:
 						break;
 					case Constants.Type.GREEN:
 						StartCoroutine("MakeDeath", wall);
-						break;
+                        GetComponentInChildren<Animator>().SetBool("hitingWall", true);
+                        break;
 				}
 			}
 		}
