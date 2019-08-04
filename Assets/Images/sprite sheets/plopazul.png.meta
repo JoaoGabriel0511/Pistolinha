@@ -1,0 +1,787 @@
+fileFormatVersion: 2
+guid: cc5a692993fa2bb43a37e0199e6f370b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2111792272121570479
+    second: plopazul_0
+  - first:
+      213: -4122453856707648187
+    second: plopazul_1
+  - first:
+      213: 7945644677460946792
+    second: plopazul_2
+  - first:
+      213: 1693629238495085577
+    second: plopazul_3
+  - first:
+      213: -4898700689188851746
+    second: plopazul_4
+  - first:
+      213: -7312167269789563756
+    second: plopazul_5
+  - first:
+      213: -3051497311318706423
+    second: plopazul_6
+  - first:
+      213: 9104707003985861321
+    second: plopazul_8
+  - first:
+      213: -2166921829031167681
+    second: plopazul_10
+  - first:
+      213: 3696315674370138061
+    second: plopazul_12
+  - first:
+      213: -123171251202709034
+    second: plopazul_14
+  - first:
+      213: -8383959090476820240
+    second: plopazul_16
+  - first:
+      213: 7250632703288348084
+    second: plopazul_17
+  - first:
+      213: 6941513770019960829
+    second: plopazul_18
+  - first:
+      213: -3143787452839777432
+    second: plopazul_19
+  - first:
+      213: 4568674504904081394
+    second: plopazul_24
+  - first:
+      213: 8358286380618902125
+    second: plopazul_26
+  - first:
+      213: 4163112615191673810
+    second: plopazul_27
+  - first:
+      213: 8536202203427621779
+    second: plopazul_30
+  - first:
+      213: 1041501226822394154
+    second: plopazul_31
+  - first:
+      213: 4199673838802192801
+    second: plopazul_35
+  - first:
+      213: 2698410443794753598
+    second: plopazul_39
+  - first:
+      213: -8793738796059711792
+    second: plopazul_40
+  - first:
+      213: -8075766489991395171
+    second: plopazul_42
+  - first:
+      213: -4614500259457513850
+    second: plopazul_43
+  - first:
+      213: 1539156875272003811
+    second: plopazul_49
+  - first:
+      213: -8492829583066003633
+    second: plopazul_50
+  - first:
+      213: 5848605024593224618
+    second: plopazul_51
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: plopazul_0
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 1977
+        width: 13
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ada126accd969a49951dfb332eaf404
+      internalID: -2111792272121570479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopazul_1
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 1639
+        width: 386
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1b0b2952d099474d9dfdb9b558ea93f
+      internalID: -4122453856707648187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopazul_2
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 1646
+        width: 328
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a86586cf42215c4e92e854222f6aa4e
+      internalID: 7945644677460946792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopazul_3
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 1781
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9411e792d9660744989f1ea7da4e9b3
+      internalID: 1693629238495085577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopazul_4
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 1652
+        width: 409
+        height: 317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3672f8264ce54d240869123ae7ab8e16
+      internalID: -4898700689188851746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopazul_5
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 1189
+        width: 209
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 070bceb7ea459c440b1df370cafbea4f
+      internalID: -7312167269789563756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopazul_6
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 1165
+        width: 268
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f208fda654fb414aba2b55deecd2bbc
+      internalID: -3051497311318706423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopazul_8
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 1175
+        width: 269
+        height: 406
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0adfbf09ea6cd7d49b750f0c374b3d02
+      internalID: 9104707003985861321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopazul_10
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 1488
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6d3ccf77f268704ea6111bcc6fe419c
+      internalID: -2166921829031167681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopazul_12
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 1275
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b4137a16dfa04f468d3b334594f17e7
+      internalID: 3696315674370138061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopazul_14
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 1275
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ff9de592506eda4b9824add9c238fbd
+      internalID: -123171251202709034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopazul_16
+      rect:
+        serializedVersion: 2
+        x: 1470
+        y: 1245
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d82afb70b4e84894f8c14d52af5d7749
+      internalID: -8383959090476820240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopazul_17
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 724
+        width: 293
+        height: 407
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cc10665148dd604cac36cfd7d4984d0
+      internalID: 7250632703288348084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopazul_18
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 1074
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b07e7549911ea443a5d0150fb33086a
+      internalID: 6941513770019960829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopazul_19
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 702
+        width: 328
+        height: 428
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c1f97008746d97438b021d575cd0da6
+      internalID: -3143787452839777432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopazul_24
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 1041
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0153a1bbc50d6e340b6efffc7ab35c5e
+      internalID: 4568674504904081394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopazul_26
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 1055
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 367ffda694ae1d44dbb9bc9faf0fcaf5
+      internalID: 8358286380618902125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopazul_27
+      rect:
+        serializedVersion: 2
+        x: 1282
+        y: 1020
+        width: 16
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4061fb10b9e3e884f81bfbd8eddb3b7b
+      internalID: 4163112615191673810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopazul_30
+      rect:
+        serializedVersion: 2
+        x: 1199
+        y: 710
+        width: 380
+        height: 448
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47712c7c3caf4fc4f8c27a1b1555d783
+      internalID: 8536202203427621779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopazul_31
+      rect:
+        serializedVersion: 2
+        x: 1551
+        y: 1012
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ef69c0109a4a9d46ae08c4e14fce34d
+      internalID: 1041501226822394154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopazul_35
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 827
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d86e6cfda21def649a9d809c5ff57147
+      internalID: 4199673838802192801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopazul_39
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 809
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45ee4cc0b87bd9647a53faedb93693a4
+      internalID: 2698410443794753598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopazul_40
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 825
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b15043421e530044ab6db9581f631d91
+      internalID: -8793738796059711792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopazul_42
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 825
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d971213c56533ad468b51e4bc0ed9853
+      internalID: -8075766489991395171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopazul_43
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 823
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3d6365d121812a4b8399a9e3418b38e
+      internalID: -4614500259457513850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopazul_49
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 757
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c959fab78e54df42830b487ef58c55d
+      internalID: 1539156875272003811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopazul_50
+      rect:
+        serializedVersion: 2
+        x: 1361
+        y: 739
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46e6beb89c07db24190bbfdc04412308
+      internalID: -8492829583066003633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopazul_51
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 708
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48c358782a0ad614391cead2d7857c7e
+      internalID: 5848605024593224618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
