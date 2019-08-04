@@ -10,12 +10,12 @@ public class RedAnimationTrigger : MonoBehaviour
             if (wall != null) {
                 switch (wall.GetColor()) {
                     case Constants.Type.RED:
-                        GetComponentInChildren<Animator>().SetBool("hitingWall", true);
+                        GetComponent<Animator>().SetBool("hitingWall", true);
                         break;
                     case Constants.Type.BLUE:
                         break;
                     case Constants.Type.GREEN:
-                        GetComponentInChildren<Animator>().SetBool("explodeWall", true);
+                        GetComponent<Animator>().SetBool("explodeWall", true);
                         break;
                 }
             }

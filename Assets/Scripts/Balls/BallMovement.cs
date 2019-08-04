@@ -45,7 +45,6 @@ public class BallMovement : MonoBehaviour {
 
 	public void OnTriggerExit2D(Collider2D collision) {
 		GetComponentInChildren<Animator>().SetBool("hitingWall", false);
-		GetComponentInChildren<Animator>().SetBool("explodeWall", false);
 	}
 
 	protected void ColisionWithWall(float wallAngle) {
