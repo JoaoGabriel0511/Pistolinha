@@ -88,4 +88,9 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetInt("LastPlayed", 0);
     }
 
+    public void ResetScene()
+    {
+        LoadScene(SceneManager.GetActiveScene().name);
+    }
+
 }

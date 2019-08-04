@@ -76,6 +76,7 @@ MonoBehaviour:
   MasterBanks:
   - Master
   Banks:
+  - Master
   - Parede
   - Tiro
   - Vozes
