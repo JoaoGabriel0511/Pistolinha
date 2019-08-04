@@ -162,7 +162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ballType: 2
-  speed: 15
+  speed: 10
 --- !u!58 &9124055206294728474
 CircleCollider2D:
   m_ObjectHideFlags: 0
