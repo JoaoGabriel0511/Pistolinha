@@ -51,7 +51,9 @@ public class BallMovement : MonoBehaviour {
 
 	protected void ColisionWithWall(float wallAngle) {
 		// Assumes that walls will be rotated with 0, 90, 45 and -45 degrees
-		if (Mathf.Approximately(Mathf.Abs(wallAngle - transform.rotation.eulerAngles.z), 90)) {
+		Debug.Log((int)transform.rotation.eulerAngles.z);
+
+		if (Mathf.Approximately(Mathf.Abs(Mathf.Abs(wallAngle) - Mathf.Abs(transform.rotation.eulerAngles.z % 180)), 90)) {
 			if (transform.rotation.eulerAngles.z < 0) {
 				transform.eulerAngles = Vector3.forward * ((180 + transform.eulerAngles.z) % 360);
 			}
@@ -60,7 +62,7 @@ public class BallMovement : MonoBehaviour {
 			}
 		}
 		else {
-			if (Mathf.Approximately(transform.rotation.eulerAngles.z % 180, 0)) {
+			if (Mathf.Approximately((int)transform.rotation.eulerAngles.z % 180, 0)) {
 				transform.eulerAngles = Vector3.forward * ((wallAngle * 2 + transform.eulerAngles.z) % 360);
 			}
 			else {
@@ -121,7 +123,7 @@ public class BallMovement : MonoBehaviour {
 	}
 
 	public void SetRotation(Quaternion rotation) {
-		transform.rotation = rotation;
-		rb2D.velocity = _ballAtrib.GetSpeed() * Vector3.right;
+		transform.eulerAngles = rotation.eulerAngles;
+		rb2D.velocity = transform.right * _ballAtrib.GetSpeed();
 	}
 }
