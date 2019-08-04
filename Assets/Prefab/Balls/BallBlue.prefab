@@ -193,5 +193,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ballCollisionBehaviour: {fileID: 0}
   bounceEventSFX: event:/Parede/Ricochete
-  deathEventSFX: event:/Parede/Batida na parede
+  deathEventSFX: event:/Parede/Batida na parede 3
   phaseEventSFX: event:/Parede/Atravessar

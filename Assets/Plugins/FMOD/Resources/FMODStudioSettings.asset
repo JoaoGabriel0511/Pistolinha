@@ -78,5 +78,6 @@ MonoBehaviour:
   Banks:
   - Parede
   - Tiro
+  - Vozes
   BanksToLoad: []
   LiveUpdatePort: 9264
