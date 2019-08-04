@@ -75,8 +75,8 @@ MonoBehaviour:
   Plugins: []
   MasterBanks:
   - Master
-  Banks:
   - Master
+  Banks:
   - Parede
   - Tiro
   - Vozes
