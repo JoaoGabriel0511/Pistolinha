@@ -88,7 +88,13 @@ public class Cannon : MonoBehaviour {
         _spriteRenderer.color = Color.blue;
     }
 
-	private void Shoot() {
+    public void SwitchToRed()
+    {
+        selectedColor = Constants.Type.RED;
+        _spriteRenderer.color = Color.red;
+    }
+
+    private void Shoot() {
 		Shot = FMODUnity.RuntimeManager.CreateInstance(ShotEvent);
 		Shot.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
 		Shot.start();
