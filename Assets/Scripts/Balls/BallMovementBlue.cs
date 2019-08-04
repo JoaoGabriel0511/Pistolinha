@@ -13,8 +13,8 @@ public class BallMovementBlue : BallMovement {
                         GetComponentInChildren<Animator>().SetBool("hitingWall", true);
 						break;
 					case Constants.Type.RED:
-						StartCoroutine("MakeDeath", wall);
-                        GetComponentInChildren<Animator>().SetBool("hitingWall", true);
+                        GetComponentInChildren<Animator>().SetBool("explodeWall", true);
+                        StartCoroutine("MakeDeath", wall);
                         break;
 				}
 			}

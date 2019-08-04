@@ -32,6 +32,7 @@ public class BallMovement : MonoBehaviour {
 
     public void OnTriggerExit2D(Collider2D collision) {
         GetComponentInChildren<Animator>().SetBool("hitingWall", false);
+        GetComponentInChildren<Animator>().SetBool("explodeWall", false);
     }
 
     public void SetBehaviour(BallCollisionBehaviour ballCollisionBehaviour)
@@ -87,7 +88,8 @@ public class BallMovement : MonoBehaviour {
 		yield return new WaitForSeconds(dt);
 		transform.position = wall.transform.position;
 		_ballAtrib.SetColiding(false);
-		Destroy(gameObject);
+        GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
+		// Destroy(gameObject);
 	}
 
 	void OnBecameInvisible() {

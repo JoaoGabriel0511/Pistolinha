@@ -15,6 +15,10 @@ public class BallAttribute : MonoBehaviour, IColorful {
 		return speed;
 	}
 
+    public void SetSpeed(float speed) {
+        this.speed = speed;
+    }
+
 	public void SetColiding(bool flag) {
 		_isColiding = flag;
 	}
