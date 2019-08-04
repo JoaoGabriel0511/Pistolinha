@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 84224900}
   - component: {fileID: 84224904}
   - component: {fileID: 84224905}
+  - component: {fileID: 84224906}
   m_Layer: 5
   m_Name: Button (2)
   m_TagString: Untagged
@@ -281,6 +282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c7386353d0b46a4f9ff8a84cfcb3241, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cannon: {fileID: 205871324}
 --- !u!61 &84224905
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -307,6 +309,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 25.172619, y: 25.172821}
   m_EdgeRadius: 0
+--- !u!114 &84224906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 84224898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18097ec8a4aeae498d2a41c82eef37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collor: 2
 --- !u!1 &205871321 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3506475266882196279, guid: 1ac6cdf2898002b41ae6336f7cc99b8e,
@@ -690,6 +705,7 @@ GameObject:
   - component: {fileID: 1154166636}
   - component: {fileID: 1154166640}
   - component: {fileID: 1154166641}
+  - component: {fileID: 1154166642}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -836,6 +852,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c7386353d0b46a4f9ff8a84cfcb3241, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cannon: {fileID: 205871324}
 --- !u!61 &1154166641
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -862,6 +879,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 24.993565, y: 24.993607}
   m_EdgeRadius: 0
+--- !u!114 &1154166642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154166634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18097ec8a4aeae498d2a41c82eef37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collor: 1
 --- !u!1 &1522642296
 GameObject:
   m_ObjectHideFlags: 0
@@ -944,6 +974,7 @@ GameObject:
   - component: {fileID: 1932239447}
   - component: {fileID: 1932239448}
   - component: {fileID: 1932239449}
+  - component: {fileID: 1932239450}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -967,7 +998,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.363, y: 0.7814122}
   m_AnchorMax: {x: 0.363, y: 0.7814122}
-  m_AnchoredPosition: {x: 0.87000275, y: 2.8499985}
+  m_AnchoredPosition: {x: 0.8699951, y: 2.8499985}
   m_SizeDelta: {x: 25, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1932239443
@@ -1090,6 +1121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c7386353d0b46a4f9ff8a84cfcb3241, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cannon: {fileID: 205871324}
 --- !u!61 &1932239448
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1137,6 +1169,19 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &1932239450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932239441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18097ec8a4aeae498d2a41c82eef37f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  collor: 0
 --- !u!1 &2051537732
 GameObject:
   m_ObjectHideFlags: 0
@@ -1617,6 +1662,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cannon
       objectReference: {fileID: 0}
+    - target: {fileID: 5629405269267201885, guid: 1ac6cdf2898002b41ae6336f7cc99b8e,
+        type: 3}
+      propertyPath: ballPrefab
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3506475266882196276, guid: 1ac6cdf2898002b41ae6336f7cc99b8e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1691,11 +1741,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5629405269267201885, guid: 1ac6cdf2898002b41ae6336f7cc99b8e,
-        type: 3}
-      propertyPath: ballPrefab
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3506475267221629031, guid: 1ac6cdf2898002b41ae6336f7cc99b8e, type: 3}
