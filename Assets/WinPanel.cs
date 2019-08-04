@@ -8,6 +8,7 @@ public class WinPanel : MonoBehaviour
     void Start()
     {
         FindObjectOfType<Goal>().StageCleared.AddListener(OnStageCleared);
+        gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -24,5 +25,10 @@ public class WinPanel : MonoBehaviour
     void OnFinishedOpening()
     {
 
+    }
+
+    public void LoadNextLevel()
+    {
+        GameManager.Instance.LoadNextLevel();
     }
 }

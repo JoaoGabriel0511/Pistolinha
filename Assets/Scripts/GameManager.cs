@@ -112,4 +112,10 @@ public class GameManager : MonoBehaviour
         PlayerPrefs.SetInt("LastPlayed", 1);
     }
 
+    public void LoadNextLevel()
+    {
+        int currentLevel = int.Parse(SceneManager.GetActiveScene().name.Remove(0, "Level".Length));
+        LoadScene("Level"+(currentLevel+1));
+    }
+
 }
