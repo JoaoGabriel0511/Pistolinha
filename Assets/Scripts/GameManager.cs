@@ -19,6 +19,7 @@ public class GameManager : MonoBehaviour
             Debug.LogWarning("Two instances of GameManager! Destroying gameObject");
             Destroy(gameObject);
         }
+        Screen.SetResolution(576, 1024, true);
     }
     
     // Start is called before the first frame update
@@ -115,7 +116,12 @@ public class GameManager : MonoBehaviour
     public void LoadNextLevel()
     {
         int currentLevel = int.Parse(SceneManager.GetActiveScene().name.Remove(0, "Level".Length));
-        LoadScene("Level"+(currentLevel+1));
+        if(currentLevel < 10)
+            LoadScene("Level"+(currentLevel+1));
+        else
+        {
+            LoadScene("LevelSelection");
+        }
     }
 
 }
