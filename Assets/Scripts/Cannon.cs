@@ -132,6 +132,7 @@ public class Cannon : MonoBehaviour {
     }
 
     private void Shoot() {
+        GetComponentInChildren<Animator>().SetBool("isShooting", true);
 		Shot = FMODUnity.RuntimeManager.CreateInstance(ShotEvent);
 		Shot.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
 		Shot.start();
