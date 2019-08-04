@@ -30,6 +30,4 @@ public class AnimatePanel : MonoBehaviour
     {
         gameObject.SetActive(false);
     }
-
-
 }
