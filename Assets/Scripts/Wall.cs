@@ -26,13 +26,13 @@ public class Wall : MonoBehaviour, IColorful {
 		switch (_color) {
 			case Constants.Type.RED:
 				_spriteRenderer.color = Color.red;
-				break;
+                break;
 			case Constants.Type.GREEN:
 				_spriteRenderer.color = Color.green;
-				break;
+                break;
 			case Constants.Type.BLUE:
 				_spriteRenderer.color = Color.blue;
-				break;
+                break;
 		}
 	}
 

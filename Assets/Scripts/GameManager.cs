@@ -51,6 +51,8 @@ public class GameManager : MonoBehaviour
 
     public void LoadScene(string scene)
     {
+        SceneManager.LoadScene(scene, LoadSceneMode.Single);
+        /*
         Debug.Log("Try load");
         if (scene.Contains("Level"))
         {
@@ -68,7 +70,7 @@ public class GameManager : MonoBehaviour
             else
                 SceneManager.LoadScene(scene, LoadSceneMode.Single);
 
-        }
+        }*/
     }
 
     IEnumerator LoadSceneAsync(string scene)
@@ -94,6 +96,20 @@ public class GameManager : MonoBehaviour
     public void ResetScene()
     {
         LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void StageCleared()
+    {
+        int stage = int.Parse(SceneManager.GetActiveScene().name.Remove(0, "Level".Length));
+        if(stage == PlayerPrefs.GetInt("LastPlayed"))
+        {
+            PlayerPrefs.SetInt("LastPlayed", stage + 1);
+        }
+    }
+
+    public void StageCleared(int zero)
+    {
+        PlayerPrefs.SetInt("LastPlayed", 1);
     }
 
 }

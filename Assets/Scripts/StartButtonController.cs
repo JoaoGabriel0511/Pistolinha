@@ -9,6 +9,7 @@ public class StartButtonController : MonoBehaviour
     {
         if(GameManager.Instance.LastPlayed() == 0)
         {
+            GameManager.Instance.StageCleared(0);
             GameManager.Instance.LoadScene("Level1");
         }
         else

@@ -1,8 +1,12 @@
 ﻿using UnityEngine;
+using UnityEngine.Events;
 
 public class Goal : MonoBehaviour {
 	[SerializeField] Constants.Type _goalType;
 	SpriteRenderer _spriteRenderer;
+
+    public UnityEvent StageCleared;
+
 
 	void Awake() {
 		_spriteRenderer = GetComponentInChildren<SpriteRenderer>();
@@ -30,8 +34,8 @@ public class Goal : MonoBehaviour {
 			BallAttribute ball = other.GetComponent<BallAttribute>();
 			if (ball.GetColor() == _goalType) {
 
-				// STAGE CONCLUSION HERE!
-
+                GameManager.Instance.StageCleared();
+                StageCleared?.Invoke();
 				_spriteRenderer.color = Color.yellow;
 			}
 		}
