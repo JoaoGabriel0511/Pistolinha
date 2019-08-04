@@ -51,12 +51,15 @@ public class GameManager : MonoBehaviour
 
     public void LoadScene(string scene)
     {
+        Debug.Log("Try load");
         if (scene.Contains("Level"))
         {
+            Debug.Log("Its a level");
             int level;
             int.TryParse(scene.Remove(0, "Level".Length), out level);
             if (level > PlayerPrefs.GetInt("LastPlayed"))
             {
+                Debug.Log("its new");
                 PlayerPrefs.SetInt("LastPlayed", level);
             }
 
