@@ -1,5 +1,25 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8331491855413781821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/thiag/Documents/git_reps/GameDev/Pistolinha/Assets/Audio/Master.strings.bank
+  SubDir: 
+  lastModified: 637004607772492817
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 1558
+  Exists: 1
 --- !u!114 &-6962616692523902513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19,7 +39,7 @@ MonoBehaviour:
   FileSizes:
   - Name: 
     Value: 1558
-  Exists: 1
+  Exists: 0
 --- !u!114 &-6466746110729237402
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35,7 +55,7 @@ MonoBehaviour:
   Path: event:/Tiro 2
   guid: 4de6d05274cc7e408ea5cd96e9c9106e
   Banks:
-  - {fileID: 3992695653676834565}
+  - {fileID: 4134584190298938973}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -62,7 +82,7 @@ MonoBehaviour:
   FileSizes:
   - Name: 
     Value: 1994
-  Exists: 1
+  Exists: 0
 --- !u!114 &-293869948379820357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93,10 +113,10 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -6962616692523902513}
-  - {fileID: -4010371711099592454}
-  - {fileID: 8201871266992732001}
-  - {fileID: 3992695653676834565}
+  - {fileID: -8331491855413781821}
+  - {fileID: 4755198970987808}
+  - {fileID: 3101581876328030496}
+  - {fileID: 4134584190298938973}
   EditorEvents:
   - {fileID: 6172351746573550315}
   - {fileID: 418818064384448164}
@@ -106,13 +126,33 @@ MonoBehaviour:
   - {fileID: 9065757531824903374}
   - {fileID: -6466746110729237402}
   EditorParameters:
-  - {fileID: 6098070571427766649}
+  - {fileID: 1166077602374598235}
   MasterBanks:
-  - {fileID: -4010371711099592454}
+  - {fileID: 4755198970987808}
   StringsBanks:
-  - {fileID: -6962616692523902513}
-  stringsBankWriteTime: 637004428320000000
+  - {fileID: -8331491855413781821}
+  stringsBankWriteTime: 637004607772492817
   cacheVersion: 3
+--- !u!114 &4755198970987808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/thiag/Documents/git_reps/GameDev/Pistolinha/Assets/Audio/Master.bank
+  SubDir: 
+  lastModified: 637004607772392816
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 1994
+  Exists: 1
 --- !u!114 &8848352186005487
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,7 +168,7 @@ MonoBehaviour:
   Path: event:/Tiro
   guid: a8e3955b66f80d44801f0248a627e4a1
   Banks:
-  - {fileID: 3992695653676834565}
+  - {fileID: 4134584190298938973}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -151,7 +191,7 @@ MonoBehaviour:
   Path: event:/Parede/Batida na parede
   guid: 406cbb2062bcce448905773f264b33c0
   Banks:
-  - {fileID: 8201871266992732001}
+  - {fileID: 3101581876328030496}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1
@@ -176,6 +216,23 @@ MonoBehaviour:
   Max: 1
   Default: 0
   Exists: 0
+--- !u!114 &1166077602374598235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: Parameter 1
+  m_EditorClassIdentifier: 
+  Name: Parameter 1
+  Min: 0
+  Max: 1
+  Default: 0
+  Exists: 1
 --- !u!114 &2108139084291329369
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,7 +248,7 @@ MonoBehaviour:
   Path: event:/Parede/Atravessar
   guid: bb6107fc5fd59c439c675593d4c9552c
   Banks:
-  - {fileID: 8201871266992732001}
+  - {fileID: 3101581876328030496}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -199,6 +256,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 400
+--- !u!114 &3101581876328030496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Parede.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/thiag/Documents/git_reps/GameDev/Pistolinha/Assets/Audio/Parede.bank
+  SubDir: 
+  lastModified: 637004607772822802
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 751424
+  Exists: 1
 --- !u!114 &3992695653676834565
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -214,6 +291,26 @@ MonoBehaviour:
   Path: C:/Users/koro_/Desktop/Pistolinha/Assets/Audio/Tiro.bank
   SubDir: 
   lastModified: 637004428280000000
+  LoadResult: 0
+  FileSizes:
+  - Name: 
+    Value: 257248
+  Exists: 0
+--- !u!114 &4134584190298938973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Tiro.bank
+  m_EditorClassIdentifier: 
+  Path: C:/Users/thiag/Documents/git_reps/GameDev/Pistolinha/Assets/Audio/Tiro.bank
+  SubDir: 
+  lastModified: 637004607772982806
   LoadResult: 0
   FileSizes:
   - Name: 
@@ -235,7 +332,7 @@ MonoBehaviour:
   Min: 0
   Max: 1
   Default: 0
-  Exists: 1
+  Exists: 0
 --- !u!114 &6172351746573550315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -251,7 +348,7 @@ MonoBehaviour:
   Path: event:/Parede/Ricochete
   guid: 19ecf52148a57646b48d79677e177744
   Banks:
-  - {fileID: 8201871266992732001}
+  - {fileID: 3101581876328030496}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -274,7 +371,7 @@ MonoBehaviour:
   Path: "event:/Parede/Ricochete mudan\xE7a de cor"
   guid: 53086b007e573a4480263cae670b3d77
   Banks:
-  - {fileID: 8201871266992732001}
+  - {fileID: 3101581876328030496}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -301,7 +398,7 @@ MonoBehaviour:
   FileSizes:
   - Name: 
     Value: 751424
-  Exists: 1
+  Exists: 0
 --- !u!114 &9065757531824903374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -317,7 +414,7 @@ MonoBehaviour:
   Path: event:/Parede/Batida na parede 2
   guid: d35fa4686b7c0144a348d305b4ebe4d9
   Banks:
-  - {fileID: 8201871266992732001}
+  - {fileID: 3101581876328030496}
   IsStream: 1
   Is3D: 0
   IsOneShot: 1

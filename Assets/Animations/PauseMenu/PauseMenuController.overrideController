@@ -7,9 +7,9 @@ AnimatorOverrideController:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: PauseMenuController
-  m_Controller: {fileID: 9100000, guid: 1265329bf951eaf4faa850ac2b1488a2, type: 2}
+  m_Controller: {fileID: 9100000, guid: a147d95232ec2e94d9fa3bb3cbc456ed, type: 2}
   m_Clips:
-  - m_OriginalClip: {fileID: 7400000, guid: 6a6f1718f8d23d2429169dc690f31b19, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: e8b55dd35f38f3e429db983f88fc83a1, type: 2}
     m_OverrideClip: {fileID: 7400000, guid: 0c77dae02da246a469c9c4ea8c090dc4, type: 2}
-  - m_OriginalClip: {fileID: 7400000, guid: 508aae09d22f4954abc63329b9614fd6, type: 2}
+  - m_OriginalClip: {fileID: 7400000, guid: befd5c612b52b0d419689d0ce472823f, type: 2}
     m_OverrideClip: {fileID: 7400000, guid: 1a3c44ac14b17ab4cb69a5ad07c13b85, type: 2}

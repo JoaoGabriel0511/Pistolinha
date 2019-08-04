@@ -19,7 +19,6 @@ public class GameManager : MonoBehaviour
             Debug.LogWarning("Two instances of GameManager! Destroying gameObject");
             Destroy(gameObject);
         }
-        SceneManager.sceneLoaded += OnSceneLoaded;
     }
     
     // Start is called before the first frame update
@@ -36,12 +35,15 @@ public class GameManager : MonoBehaviour
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
+        Debug.Log("scene.name: " + scene.name);
         if (scene.name.Contains("Level"))
-        {    
+        {
+            Debug.Log("has level");
             int level;
             int.TryParse(scene.name.Remove(0, "Level".Length), out level);
             if (level != 0)
             {
+                Debug.Log("level not zero");
                 SceneManager.LoadScene("GameGUI", LoadSceneMode.Additive);
             }
         }
@@ -53,21 +55,37 @@ public class GameManager : MonoBehaviour
         {
             int level;
             int.TryParse(scene.Remove(0, "Level".Length), out level);
-            if(level > PlayerPrefs.GetInt("LastPlayed"))
+            if (level > PlayerPrefs.GetInt("LastPlayed"))
+            {
                 PlayerPrefs.SetInt("LastPlayed", level);
-            
-            SceneManager.LoadScene(scene, LoadSceneMode.Single);
+            }
+
+            if (level != 0)
+                StartCoroutine(LoadSceneAsync(scene));
+            else
+                SceneManager.LoadScene(scene, LoadSceneMode.Single);
+
         }
+    }
+
+    IEnumerator LoadSceneAsync(string scene)
+    {
+        AsyncOperation operation = SceneManager.LoadSceneAsync(scene, LoadSceneMode.Single);
+        while (!operation.isDone)
+        {
+            yield return null;
+        }
+        SceneManager.LoadScene("GameGUI", LoadSceneMode.Additive);
     }
 
     public int LastPlayed()
     {
-        return PlayerPrefs.GetInt("LastPlayed", -1);
+        return PlayerPrefs.GetInt("LastPlayed", 0);
     }
 
     public void ClearProgress()
     {
-        PlayerPrefs.SetInt("LastPlayed", -1);
+        PlayerPrefs.SetInt("LastPlayed", 0);
     }
 
 }
