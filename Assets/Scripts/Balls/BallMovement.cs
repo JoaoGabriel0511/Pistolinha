@@ -45,9 +45,15 @@ public class BallMovement : MonoBehaviour {
 		}
 	}
 
-	public void SetBehaviour(BallCollisionBehaviour ballCollisionBehaviour) {
-		this.ballCollisionBehaviour = ballCollisionBehaviour;
-	}
+    public void OnTriggerExit2D(Collider2D collision) {
+        GetComponentInChildren<Animator>().SetBool("hitingWall", false);
+        GetComponentInChildren<Animator>().SetBool("explodeWall", false);
+    }
+
+    public void SetBehaviour(BallCollisionBehaviour ballCollisionBehaviour)
+    {
+        this.ballCollisionBehaviour = ballCollisionBehaviour;
+    }
 
 	protected void ColisionWithWall(float wallAngle) {
 		// Assumes that walls will be rotated with 0, 90, 45 and -45 degrees
@@ -103,12 +109,8 @@ public class BallMovement : MonoBehaviour {
 		yield return new WaitForSeconds(dt);
 		transform.position = wall.transform.position;
 		_ballAtrib.SetColiding(false);
-
-		_deathSFX = FMODUnity.RuntimeManager.CreateInstance(deathEventSFX);
-		_deathSFX.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
-		_deathSFX.start();
-
-		Destroy(gameObject);
+        GetComponent<Rigidbody2D>().velocity = new Vector2(0,0);
+		// Destroy(gameObject);
 	}
 
 	protected IEnumerator MakePhase() {

@@ -1,0 +1,859 @@
+fileFormatVersion: 2
+guid: 8bb79b1494fdc5046b4d01aa2aa72c42
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2298628316531202416
+    second: plopvermelho_0
+  - first:
+      213: -5905698944360326895
+    second: plopvermelho_1
+  - first:
+      213: -7693656207788302342
+    second: plopvermelho_2
+  - first:
+      213: -2720603804059543884
+    second: plopvermelho_3
+  - first:
+      213: 8881384450905929486
+    second: plopvermelho_4
+  - first:
+      213: 7215915690803938986
+    second: plopvermelho_5
+  - first:
+      213: -9085733338281864802
+    second: plopvermelho_6
+  - first:
+      213: -6648983003829862550
+    second: plopvermelho_8
+  - first:
+      213: 3484705559722692384
+    second: plopvermelho_9
+  - first:
+      213: 884289299511208219
+    second: plopvermelho_10
+  - first:
+      213: 1285993276271110843
+    second: plopvermelho_11
+  - first:
+      213: 615944578670284913
+    second: plopvermelho_12
+  - first:
+      213: 8034473231527187941
+    second: plopvermelho_13
+  - first:
+      213: -6625531668598941781
+    second: plopvermelho_14
+  - first:
+      213: -2579930002761005299
+    second: plopvermelho_16
+  - first:
+      213: -857090910017990844
+    second: plopvermelho_17
+  - first:
+      213: 2539205315318527926
+    second: plopvermelho_18
+  - first:
+      213: 6468808081163055960
+    second: plopvermelho_19
+  - first:
+      213: -1529224922771255333
+    second: plopvermelho_24
+  - first:
+      213: -880471905794211573
+    second: plopvermelho_26
+  - first:
+      213: -381261000604371685
+    second: plopvermelho_30
+  - first:
+      213: -3883463054563008736
+    second: plopvermelho_31
+  - first:
+      213: 1624124821218520372
+    second: plopvermelho_35
+  - first:
+      213: 3158425147740101898
+    second: plopvermelho_39
+  - first:
+      213: 7762786434480291925
+    second: plopvermelho_40
+  - first:
+      213: -5016332426111882290
+    second: plopvermelho_41
+  - first:
+      213: 4544975620726838302
+    second: plopvermelho_42
+  - first:
+      213: 629053015613429335
+    second: plopvermelho_43
+  - first:
+      213: 8236522815289789512
+    second: plopvermelho_49
+  - first:
+      213: -8505578746310700029
+    second: plopvermelho_50
+  - first:
+      213: 996943025388636109
+    second: plopvermelho_51
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: plopvermelho_0
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 1977
+        width: 13
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c10ee2f08ba1124082fa5fa60723356
+      internalID: 2298628316531202416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopvermelho_1
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 1639
+        width: 386
+        height: 350
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bf72b2e22d66eb40a709a826aaecc0e
+      internalID: -5905698944360326895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopvermelho_2
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 1646
+        width: 328
+        height: 331
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40cee5b1e79f86d40b61c094f6293477
+      internalID: -7693656207788302342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopvermelho_3
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 1781
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 308c9fb169f6d7c408cac2f6b9c057d8
+      internalID: -2720603804059543884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopvermelho_4
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 1652
+        width: 409
+        height: 317
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9da17ce572a1f404787939671e2a3fce
+      internalID: 8881384450905929486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopvermelho_5
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 1189
+        width: 209
+        height: 379
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e72733511bc029141bcfbf070fc4572e
+      internalID: 7215915690803938986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopvermelho_6
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 1165
+        width: 245
+        height: 416
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b8e72cbd09f06b40b354678f0e39a2b
+      internalID: -9085733338281864802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopvermelho_8
+      rect:
+        serializedVersion: 2
+        x: 1246
+        y: 1175
+        width: 277
+        height: 406
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff833e010ddfe104cb5df908aba6daf1
+      internalID: -6648983003829862550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopvermelho_9
+      rect:
+        serializedVersion: 2
+        x: 1980
+        y: 476
+        width: 68
+        height: 49
+      alignment: 9
+      pivot: {x: 0.7902706, y: -0.5933813}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31c449d9aa497bf4a8640dfa3786efc4
+      internalID: 3484705559722692384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopvermelho_10
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 1488
+        width: 26
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4e536e76a163cb44ab279f627c7e34d
+      internalID: 884289299511208219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopvermelho_11
+      rect:
+        serializedVersion: 2
+        x: 872
+        y: 1273
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58fe1db5cedcf4f499b26cfa43b5a468
+      internalID: 1285993276271110843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopvermelho_12
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 1275
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bf61c405b1528a4f95aceb124d83ff3
+      internalID: 615944578670284913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopvermelho_13
+      rect:
+        serializedVersion: 2
+        x: 2047
+        y: 148
+        width: 1
+        height: 3
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d56352f38e17384982b79c11f4a543e
+      internalID: 8034473231527187941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopvermelho_14
+      rect:
+        serializedVersion: 2
+        x: 1530
+        y: 1275
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cbb57b9800fb444991db8ba7c235e16
+      internalID: -6625531668598941781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopvermelho_16
+      rect:
+        serializedVersion: 2
+        x: 1470
+        y: 1245
+        width: 19
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b8b2ac519f28e940b73d5b16277361f
+      internalID: -2579930002761005299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopvermelho_17
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 724
+        width: 301
+        height: 407
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8451bb7908852c94697bd9f3070982a3
+      internalID: -857090910017990844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopvermelho_18
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 1074
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 826f4940e6f0ece44b7a5612087a1afd
+      internalID: 2539205315318527926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopvermelho_19
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 704
+        width: 330
+        height: 427
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74e89bd78bc2b12428ce585c1d737008
+      internalID: 6468808081163055960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopvermelho_24
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 1041
+        width: 26
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6df2b339ba008774ab86885dd9ab33e0
+      internalID: -1529224922771255333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopvermelho_26
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 1055
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f9ae67fa3144fe4787bcc4361ba4052
+      internalID: -880471905794211573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopvermelho_30
+      rect:
+        serializedVersion: 2
+        x: 1207
+        y: 710
+        width: 375
+        height: 439
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56ddeec895743b1429b00674ab7376a5
+      internalID: -381261000604371685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopvermelho_31
+      rect:
+        serializedVersion: 2
+        x: 1551
+        y: 1012
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e793c3c9fc526d42957c50a159bff3d
+      internalID: -3883463054563008736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopvermelho_35
+      rect:
+        serializedVersion: 2
+        x: 906
+        y: 827
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b25b1fc758e1fc542857baf5787d6909
+      internalID: 1624124821218520372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopvermelho_39
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 809
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46b293e2ef14ba54d9b5c916be8c3565
+      internalID: 3158425147740101898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopvermelho_40
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 825
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f144d2131f37ca14295b897778a8cdfa
+      internalID: 7762786434480291925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopvermelho_41
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 787
+        width: 37
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcb842b30b869eb4cae1d72c61cced0e
+      internalID: -5016332426111882290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopvermelho_42
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 825
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f25ad383b546c874ea73fe331d7b5617
+      internalID: 4544975620726838302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopvermelho_43
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 823
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7642e2000981bd4dbf1e7adffa3edcb
+      internalID: 629053015613429335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopvermelho_49
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 757
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64ccab509d08aff41bd2a51b109a1dab
+      internalID: 8236522815289789512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopvermelho_50
+      rect:
+        serializedVersion: 2
+        x: 1361
+        y: 739
+        width: 20
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a03a5a4cf3fdaf48ac1c5ac210a59a3
+      internalID: -8505578746310700029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: plopvermelho_51
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 708
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad7ac489130680741a53d15280c24dd6
+      internalID: 996943025388636109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
