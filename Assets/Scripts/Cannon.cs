@@ -90,9 +90,14 @@ public class Cannon : MonoBehaviour {
     }
 
     void Update() {
-		if (Input.GetButtonDown("Fire")) {
-			Shoot();
-		}
+        if (Input.GetMouseButtonDown(0)) {
+            Vector3 mousePos = Input.mousePosition;
+            Bounds bounds = GetComponent<BoxCollider2D>().bounds;
+            Vector2 size = GetComponent<BoxCollider2D>().size;
+            if (new Rect(bounds.min.x, bounds.min.y, size.x, size.y).Contains(Camera.main.ScreenToWorldPoint(mousePos))) {
+                Shoot();
+            }
+        }
 	}
 
 	private void SwitchToPreviousBall() {
@@ -164,4 +169,5 @@ public class Cannon : MonoBehaviour {
 
 		yield break;
 	}
+
 }
