@@ -181,6 +181,7 @@ GameObject:
   - component: {fileID: 8000971818532661103}
   - component: {fileID: 6789702091894506521}
   - component: {fileID: -3858984758172249812}
+  - component: {fileID: 1899079393525951103}
   m_Layer: 0
   m_Name: RedBall
   m_TagString: Untagged
@@ -316,6 +317,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a85556383d2c4b84b9bb6a5029078ddc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bounceEventSFX: event:/Tiro
-  deathEventSFX: event:/Tiro 2
-  phaseEventSFX: event:/Tiro 3
+  sound: 3
+--- !u!114 &1899079393525951103
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8000971818532661102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aafc9106942abab46ba0fc409c37cb04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  selectSound:
+  - event:/Parede/Ricochete
+  - event:/Parede/Batida na parede
+  - event:/Parede/Atravessar

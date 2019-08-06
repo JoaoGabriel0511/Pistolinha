@@ -1,11 +1,17 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Cannon : MonoBehaviour {
 
-	[SerializeField] GameObject redBallPrefab;
-    [SerializeField] GameObject blueBallPrefab;
-    [SerializeField] GameObject greenBallPrefab;
+    //[SerializeField] GameObject redBallPrefab;
+    //[SerializeField] GameObject blueBallPrefab;
+    //[SerializeField] GameObject greenBallPrefab;
+    
+    [SerializeField] List<BallMovement> ballPoll = new List<BallMovement>();
+    List<BallMovement> ballUsed = new List<BallMovement>();
+    
+
 
     [SerializeField] bool _redEnable = true;
 	[SerializeField] bool _blueEnable = true;
@@ -13,10 +19,8 @@ public class Cannon : MonoBehaviour {
 
 	Constants.Type selectedColor = Constants.Type.RED;
 	SpriteRenderer _spriteRenderer;
-
-	[FMODUnity.EventRef]
-	public string ShotEvent;
-	FMOD.Studio.EventInstance Shot;
+    Animator _animator;
+    AudioEmitter _audioEmitter;
 
 	[SerializeField] int _typeVar = (int)Constants.Type.RED;
 
@@ -24,6 +28,9 @@ public class Cannon : MonoBehaviour {
 
 	void Awake() {
 		_spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+        _animator = GetComponentInChildren<Animator>();
+        _audioEmitter = GetComponent<AudioEmitter>();
+
 		if (!_spriteRenderer) {
 			Debug.Log("No SpriteRenderer found.");
 		}
@@ -46,6 +53,13 @@ public class Cannon : MonoBehaviour {
 		else {
 			Debug.Log("No color enabled in the cannon!");
 		}
+
+        foreach(BallMovement ball in ballPoll)
+        {
+            ball.GetComponentInChildren<VisualCallbacks>().onAnimationFinish = DeactiveBall;
+            ball.GetComponentInChildren<VisualCallbacks>().onBecameInvisible = DeactiveBall;
+            ball.gameObject.SetActive(false);
+        }
 	}
     
     void OnEnable()
@@ -131,37 +145,64 @@ public class Cannon : MonoBehaviour {
     }
 
     private void Shoot() {
-        GetComponentInChildren<Animator>().SetBool("isShooting", true);
-		Shot = FMODUnity.RuntimeManager.CreateInstance(ShotEvent);
-		Shot.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
-		Shot.start();
+        _animator.SetBool("isShooting", true);
+		_audioEmitter.PlaySound();
 
 		StartCoroutine("MakeShootSFX");
 	}
 
-	IEnumerator MakeShootSFX() {
-		yield return new WaitForSeconds(0.175f);
+    IEnumerator MakeShootSFX() {
+        yield return new WaitForSeconds(0.175f);
 
-		BallMovement ball;
-		switch (selectedColor) {
+        BallMovement ball;
+        /*
+        switch (selectedColor) {
 			case Constants.Type.RED:
-				ball = Instantiate(redBallPrefab, transform.position, Quaternion.identity).GetComponent<BallMovement>();
+                //ball = Instantiate(redBallPrefab, transform.position, Quaternion.identity).GetComponent<BallMovement>();
 				break;
 			case Constants.Type.BLUE:
-				ball = Instantiate(blueBallPrefab, transform.position, Quaternion.identity).GetComponent<BallMovement>();
+				//ball = Instantiate(blueBallPrefab, transform.position, Quaternion.identity).GetComponent<BallMovement>();
 				break;
 			case Constants.Type.GREEN:
-				ball = Instantiate(greenBallPrefab, transform.position, Quaternion.identity).GetComponent<BallMovement>();
+				//ball = Instantiate(greenBallPrefab, transform.position, Quaternion.identity).GetComponent<BallMovement>();
 				break;
 			default:
 				ball = null;
 				break;
-		}
+		}*/
+        int ballIndex = ballPoll.FindIndex(0,
+            (BallMovement ballMovement) => ballMovement.Type == selectedColor);
+
+        if (ballIndex != -1)
+        {
+            ball = ballPoll[ballIndex];
+            ballPoll.RemoveAt(ballIndex);
+            ballUsed.Add(ball);
+        }
+        else ball = null;
+
         if (ball) {
+            ball.gameObject.SetActive(true);
 			ball.SetRotation(transform.rotation);
 		}
 
 		yield break;
 	}
+
+    void DeactiveBall(GameObject go)
+    {
+
+        go.transform.parent.gameObject.SetActive(false);
+        BallMovement ball = go.transform.parent.GetComponent<BallMovement>();
+        int ballIndex = ballUsed.IndexOf(ball);
+
+        if (ballIndex != -1)
+        {
+            ball.transform.position = transform.position;
+            ball = ballUsed[ballIndex];
+            ballUsed.RemoveAt(ballIndex);
+            ballPoll.Add(ball);
+        }
+    }
 
 }

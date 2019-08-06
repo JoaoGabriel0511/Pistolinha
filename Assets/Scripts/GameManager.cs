@@ -7,10 +7,6 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    [FMODUnity.EventRef]
-    public string BGEvent;
-    FMOD.Studio.EventInstance BGMusic;
-
     void Awake()
     {
         if(Instance == null)

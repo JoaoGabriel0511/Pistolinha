@@ -1,45 +1,46 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class BallMovement : MonoBehaviour {
 
-	//  Internal references
-	protected Rigidbody2D rb2D;
+	enum Sound
+    {
+        BOUNCE,
+        DEATH,
+        PHASE,
+        VIEW_SOUND_ORDER
+    }
+    [SerializeField] Sound sound = Sound.VIEW_SOUND_ORDER; 
+    
+    //  Internal references
+	protected Rigidbody2D _rb2D;
 	protected BallAttribute _ballAttr;
-	AudioSource _audioSource;
-	AudioClip _audioClip;
-	float centerDistance = Mathf.Infinity;
+    AudioEmitter _audioEmitter;
+    Animator _animator;
 
-	[FMODUnity.EventRef]
-	public string bounceEventSFX;
-	FMOD.Studio.EventInstance _bounceSFX;
-
-	[FMODUnity.EventRef]
-	public string deathEventSFX;
-	FMOD.Studio.EventInstance _deathSFX;
-
-	[FMODUnity.EventRef]
-	public string phaseEventSFX;
-	FMOD.Studio.EventInstance _phaseSFX;
+    public Constants.Type Type
+    {
+        get { return _ballAttr.GetColor(); }
+    }
+    float centerDistance = Mathf.Infinity;
 
     protected void Awake() {
-		rb2D = GetComponent<Rigidbody2D>();
+		_rb2D = GetComponent<Rigidbody2D>();
 		_ballAttr = GetComponent<BallAttribute>();
-		_audioSource = GetComponent<AudioSource>();
+        _audioEmitter = GetComponent<AudioEmitter>();
+        _animator = GetComponentInChildren<Animator>();
+        sound = Sound.DEATH;
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {
         _ballAttr.collisionBehaviour.ResolveCollision(other.gameObject, this);
 	}
 
-	public void OnTriggerExit2D(Collider2D collision) {
-		GetComponentInChildren<Animator>().SetBool("hitingWall", false);
-	}
-
 	protected void ColisionWithWall(float wallAngle) {
 		// Assumes that walls will be rotated with 0, 90, 45 and -45 degrees
-		Debug.Log((int)transform.rotation.eulerAngles.z);
+		//Debug.Log((int)transform.rotation.eulerAngles.z);
 
 		if (Mathf.Approximately(Mathf.Abs(Mathf.Abs(wallAngle) - Mathf.Abs(transform.rotation.eulerAngles.z % 180)), 90)) {
 			if (transform.rotation.eulerAngles.z < 0) {
@@ -59,7 +60,7 @@ public class BallMovement : MonoBehaviour {
 		}
 
 		// Redirect the velocity
-		rb2D.velocity = transform.right * rb2D.velocity.magnitude;
+		_rb2D.velocity = transform.right * _rb2D.velocity.magnitude;
 	}
 
 	protected IEnumerator MakeColision(Wall wall) {
@@ -73,9 +74,9 @@ public class BallMovement : MonoBehaviour {
 		transform.position = wall.transform.position;
 		ColisionWithWall(wall.Angle);
 
-		_bounceSFX = FMODUnity.RuntimeManager.CreateInstance(bounceEventSFX);
-		_bounceSFX.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
-		_bounceSFX.start();
+		
+        _audioEmitter.ChangeSound((int)Sound.BOUNCE);
+        _audioEmitter.PlaySound();
 
 		yield return new WaitForSeconds(dt / 2);
 		_ballAttr.SetColiding(false);
@@ -93,26 +94,18 @@ public class BallMovement : MonoBehaviour {
 		_ballAttr.SetColiding(false);
 		GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
 
-		_deathSFX = FMODUnity.RuntimeManager.CreateInstance(deathEventSFX);
-		_deathSFX.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
-		_deathSFX.start();
-
-		// Destroy(gameObject);
+        _audioEmitter.ChangeSound((int)Sound.DEATH);
+        _audioEmitter.PlaySound();
+        _animator.SetBool("explodeWall", true);
 	}
 
 	protected IEnumerator MakePhase() {
-		_phaseSFX = FMODUnity.RuntimeManager.CreateInstance(phaseEventSFX);
-		_phaseSFX.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
-		_phaseSFX.start();
+        _audioEmitter.ChangeSound((int)Sound.PHASE);
 		yield break;
-	}
-
-	void OnBecameInvisible() {
-		Destroy(gameObject);
 	}
 
 	public void SetRotation(Quaternion rotation) {
 		transform.eulerAngles = rotation.eulerAngles;
-		rb2D.velocity = transform.right * _ballAttr.GetSpeed();
+		_rb2D.velocity = transform.right * _ballAttr.GetSpeed();
 	}
 }
