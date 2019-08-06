@@ -17,7 +17,7 @@ public class AudioEmitter : MonoBehaviour
 
     void Start()
     {
-        if(selectSound.Length != 0 || selectSound[index] != "")
+        if(selectSound.Length != 0 && selectSound[index] != "")
             soundEvent[index] = FMODUnity.RuntimeManager.CreateInstance(selectSound[index]);
     }
 

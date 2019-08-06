@@ -56,7 +56,6 @@ namespace FMODUnity
             // Deserialize the cache from the unity resources
             if (eventCache == null)
             {
-                Debug.Log(CacheAssetFullName);
                 eventCache = AssetDatabase.LoadAssetAtPath(CacheAssetFullName, typeof(EventCache)) as EventCache;
                 if (eventCache == null || eventCache.cacheVersion != EventCache.CurrentCacheVersion)
                 {

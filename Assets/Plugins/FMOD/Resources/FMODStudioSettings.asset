@@ -75,9 +75,7 @@ MonoBehaviour:
   Plugins: []
   MasterBanks:
   - Master
-  - Master
   Banks:
-  - Master
   - "M\xFAsicas"
   - Parede
   - Tiro
