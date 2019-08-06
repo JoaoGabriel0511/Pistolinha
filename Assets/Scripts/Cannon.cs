@@ -3,13 +3,11 @@ using UnityEngine;
 
 public class Cannon : MonoBehaviour {
 
-	[SerializeField] GameObject ballRedPrefab;
-	[SerializeField] GameObject ballGreenPrefab;
-	[SerializeField] GameObject ballBluePrefab;
-	[SerializeField] GameObject ballPrefab;
-	[SerializeField] BallCollisionBehaviour[] ballBehaviours;
+	[SerializeField] GameObject redBallPrefab;
+    [SerializeField] GameObject blueBallPrefab;
+    [SerializeField] GameObject greenBallPrefab;
 
-	[SerializeField] bool _redEnable = true;
+    [SerializeField] bool _redEnable = true;
 	[SerializeField] bool _blueEnable = true;
 	[SerializeField] bool _greenEnable = true;
 
@@ -147,19 +145,19 @@ public class Cannon : MonoBehaviour {
 		BallMovement ball;
 		switch (selectedColor) {
 			case Constants.Type.RED:
-				ball = Instantiate(ballRedPrefab, transform.position, Quaternion.identity).GetComponent<BallMovement>();
+				ball = Instantiate(redBallPrefab, transform.position, Quaternion.identity).GetComponent<BallMovement>();
 				break;
 			case Constants.Type.BLUE:
-				ball = Instantiate(ballBluePrefab, transform.position, Quaternion.identity).GetComponent<BallMovement>();
+				ball = Instantiate(blueBallPrefab, transform.position, Quaternion.identity).GetComponent<BallMovement>();
 				break;
 			case Constants.Type.GREEN:
-				ball = Instantiate(ballGreenPrefab, transform.position, Quaternion.identity).GetComponent<BallMovement>();
+				ball = Instantiate(greenBallPrefab, transform.position, Quaternion.identity).GetComponent<BallMovement>();
 				break;
 			default:
 				ball = null;
 				break;
 		}
-		if (ball) {
+        if (ball) {
 			ball.SetRotation(transform.rotation);
 		}
 

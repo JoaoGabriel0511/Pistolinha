@@ -4,5 +4,5 @@ using UnityEngine;
 
 public abstract class BallCollisionBehaviour : ScriptableObject
 {
-    public abstract void ResolveCollision(Wall wall, BallMovement ball);
+    public abstract void ResolveCollision(GameObject go, BallMovement ball);
 }

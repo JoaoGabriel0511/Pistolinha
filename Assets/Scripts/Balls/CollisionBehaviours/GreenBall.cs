@@ -5,18 +5,26 @@ using UnityEngine;
 [CreateAssetMenu(menuName ="Ball Behaviour/Green Ball")]
 public class GreenBall : BallCollisionBehaviour
 {
-    public override void ResolveCollision(Wall wall, BallMovement ball)
+    public override void ResolveCollision(GameObject go, BallMovement ball)
     {
-        switch (wall.GetColor())
+        if (go.GetComponent<IColorful>() != null)
         {
-            case Constants.Type.GREEN:
-                Destroy(ball.gameObject);
-                break;
-            case Constants.Type.RED:
-                //ball.ColisionWithWall(wall.Angle);
-                break;
-            case Constants.Type.BLUE:
-                break;
+            Wall wall = go.GetComponent<Wall>();
+            if (wall != null)
+            {
+                switch (wall.GetColor())
+                {
+                    case Constants.Type.GREEN:
+                        ball.StartCoroutine("MakeDeath", wall);
+                        break;
+                    case Constants.Type.RED:
+                        ball.StartCoroutine("MakeColision", wall);
+                        break;
+                    case Constants.Type.BLUE:
+                        ball.StartCoroutine("MakePhase");
+                        break;
+                }
+            }
         }
     }
 }

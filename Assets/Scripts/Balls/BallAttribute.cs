@@ -5,8 +5,9 @@ using UnityEngine;
 public class BallAttribute : MonoBehaviour, IColorful {
 	[SerializeField] Constants.Type ballType;
 	[SerializeField] float speed;
+    public BallCollisionBehaviour collisionBehaviour;
 	bool _isColiding;
-
+    
 	public Constants.Type GetColor() {
 		return ballType;
 	}
@@ -25,9 +26,5 @@ public class BallAttribute : MonoBehaviour, IColorful {
 
 	public bool IsColiding() {
 		return _isColiding;
-	}
-
-	void OnCollisionEnter2D(Collision2D collision2D) {
-		IColorful iColorful = collision2D.gameObject.GetComponent<IColorful>();
 	}
 }

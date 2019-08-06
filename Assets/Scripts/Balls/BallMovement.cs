@@ -6,7 +6,7 @@ public class BallMovement : MonoBehaviour {
 
 	//  Internal references
 	protected Rigidbody2D rb2D;
-	protected BallAttribute _ballAtrib;
+	protected BallAttribute _ballAttr;
 	AudioSource _audioSource;
 	AudioClip _audioClip;
 	float centerDistance = Mathf.Infinity;
@@ -23,14 +23,16 @@ public class BallMovement : MonoBehaviour {
 	public string phaseEventSFX;
 	FMOD.Studio.EventInstance _phaseSFX;
 
-	protected void Awake() {
+    protected void Awake() {
 		rb2D = GetComponent<Rigidbody2D>();
-		_ballAtrib = GetComponent<BallAttribute>();
+		_ballAttr = GetComponent<BallAttribute>();
 		_audioSource = GetComponent<AudioSource>();
 	}
 
-	public virtual void OnTriggerEnter2D(Collider2D other) {
-		if (other.GetComponent<IColorful>() != null) {
+	void OnTriggerEnter2D(Collider2D other) {
+        _ballAttr.collisionBehaviour.ResolveCollision(other.gameObject, this);
+        /*
+        if (other.GetComponent<IColorful>() != null) {
 			Wall wall = other.GetComponent<Wall>();
 			if (wall != null) {
 				if (wall.GetColor() == _ballAtrib.GetColor()) {
@@ -40,7 +42,7 @@ public class BallMovement : MonoBehaviour {
 					Destroy(gameObject);
 				}
 			}
-		}
+		}*/
 	}
 
 	public void OnTriggerExit2D(Collider2D collision) {
@@ -73,12 +75,12 @@ public class BallMovement : MonoBehaviour {
 	}
 
 	protected IEnumerator MakeColision(Wall wall) {
-		if (_ballAtrib.IsColiding()) {
+		if (_ballAttr.IsColiding()) {
 			yield break;
 		}
-		_ballAtrib.SetColiding(true);
+		_ballAttr.SetColiding(true);
 
-		float dt = Vector3.Distance(wall.transform.position, transform.position) / _ballAtrib.GetSpeed();
+		float dt = Vector3.Distance(wall.transform.position, transform.position) / _ballAttr.GetSpeed();
 		yield return new WaitForSeconds(dt);
 		transform.position = wall.transform.position;
 		ColisionWithWall(wall.Angle);
@@ -88,19 +90,19 @@ public class BallMovement : MonoBehaviour {
 		_bounceSFX.start();
 
 		yield return new WaitForSeconds(dt / 2);
-		_ballAtrib.SetColiding(false);
+		_ballAttr.SetColiding(false);
 	}
 
 	protected IEnumerator MakeDeath(Wall wall) {
-		if (_ballAtrib.IsColiding()) {
+		if (_ballAttr.IsColiding()) {
 			yield break;
 		}
-		_ballAtrib.SetColiding(true);
+		_ballAttr.SetColiding(true);
 
-		float dt = Vector3.Distance(wall.transform.position, transform.position) / _ballAtrib.GetSpeed();
+		float dt = Vector3.Distance(wall.transform.position, transform.position) / _ballAttr.GetSpeed();
 		yield return new WaitForSeconds(dt);
 		transform.position = wall.transform.position;
-		_ballAtrib.SetColiding(false);
+		_ballAttr.SetColiding(false);
 		GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
 
 		_deathSFX = FMODUnity.RuntimeManager.CreateInstance(deathEventSFX);
@@ -123,6 +125,6 @@ public class BallMovement : MonoBehaviour {
 
 	public void SetRotation(Quaternion rotation) {
 		transform.eulerAngles = rotation.eulerAngles;
-		rb2D.velocity = transform.right * _ballAtrib.GetSpeed();
+		rb2D.velocity = transform.right * _ballAttr.GetSpeed();
 	}
 }
