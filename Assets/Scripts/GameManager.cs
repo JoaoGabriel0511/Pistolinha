@@ -22,7 +22,6 @@ public class GameManager : MonoBehaviour
             Debug.LogWarning("Two instances of GameManager! Destroying gameObject");
             Destroy(gameObject);
         }
-        Screen.SetResolution(576, 1024, true);
     }
     
     // Start is called before the first frame update

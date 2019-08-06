@@ -10,5 +10,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fa932b5ff1320084ca1664d525aca7ee, type: 3}
-  m_Name: BLUEBall
+  m_Name: BlueBall
   m_EditorClassIdentifier: 

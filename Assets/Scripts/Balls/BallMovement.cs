@@ -31,18 +31,6 @@ public class BallMovement : MonoBehaviour {
 
 	void OnTriggerEnter2D(Collider2D other) {
         _ballAttr.collisionBehaviour.ResolveCollision(other.gameObject, this);
-        /*
-        if (other.GetComponent<IColorful>() != null) {
-			Wall wall = other.GetComponent<Wall>();
-			if (wall != null) {
-				if (wall.GetColor() == _ballAtrib.GetColor()) {
-					ColisionWithWall(wall.Angle);
-				}
-				else {
-					Destroy(gameObject);
-				}
-			}
-		}*/
 	}
 
 	public void OnTriggerExit2D(Collider2D collision) {
