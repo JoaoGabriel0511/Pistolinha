@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class SelectLevel : MonoBehaviour
 {
-    public void OnClick()
+    public void OnClick(string level)
     {
-        GameManager.Instance.LoadScene("LevelSelection");
+        GameManager.Instance.LoadScene(level);
     }
 }

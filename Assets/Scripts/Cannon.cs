@@ -49,7 +49,7 @@ public class Cannon : MonoBehaviour {
 			Debug.Log("No color enabled in the cannon!");
 		}
 	}
-    /*
+    
     void OnEnable()
     {
         colorMunition = FindObjectsOfType<ColorMunition>();
@@ -65,10 +65,6 @@ public class Cannon : MonoBehaviour {
         {
             cl.clickedEvent.RemoveListener(ChangeColor);
         }
-    }*/
-
-    private void OnCollisionEnter2D(Collision2D collision) {
-
     }
 
     public void ChangeColor(Constants.Type type)
