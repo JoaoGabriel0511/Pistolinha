@@ -101,7 +101,8 @@ public class BallMovement : MonoBehaviour {
 
 	protected IEnumerator MakePhase() {
         _audioEmitter.ChangeSound((int)Sound.PHASE);
-		yield break;
+        _audioEmitter.PlaySound();
+        yield break;
 	}
 
 	public void SetRotation(Quaternion rotation) {

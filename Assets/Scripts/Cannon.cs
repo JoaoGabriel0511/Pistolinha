@@ -102,6 +102,7 @@ public class Cannon : MonoBehaviour {
             Vector3 mousePos = Input.mousePosition;
             Bounds bounds = GetComponent<BoxCollider2D>().bounds;
             Vector2 size = GetComponent<BoxCollider2D>().size;
+            Debug.Log(Camera.main);
             if (new Rect(bounds.min.x, bounds.min.y, size.x, size.y).Contains(Camera.main.ScreenToWorldPoint(mousePos))) {
                 Shoot();
             }
