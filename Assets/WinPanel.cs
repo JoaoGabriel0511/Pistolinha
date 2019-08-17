@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class WinPanel : MonoBehaviour
 {
@@ -25,6 +26,14 @@ public class WinPanel : MonoBehaviour
     void OnFinishedOpening()
     {
 
+    }
+
+    public void LoadMap() {
+        GameManager.Instance.LoadScene("StageSelection");
+    }
+
+    public void LoadSameLevel() {
+        GameManager.Instance.LoadSameLevel();
     }
 
     public void LoadNextLevel()

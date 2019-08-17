@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -30,6 +31,11 @@ public class GameManager : MonoBehaviour
         */
         SceneManager.LoadScene("TitleScreen", LoadSceneMode.Additive);
         SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    internal void LoadSameLevel() {
+        int currentLevel = int.Parse(SceneManager.GetActiveScene().name.Remove(0, "Level".Length));
+        LoadScene("Level" + (currentLevel));
     }
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
