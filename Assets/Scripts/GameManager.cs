@@ -47,6 +47,7 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
+        // LoadScene("LoadingScreen");
         if (LastPlayed() == 0)
         {
             StageCleared(0);
@@ -92,7 +93,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    IEnumerator LoadSceneAsync(string scene)
+    public IEnumerator LoadSceneAsync(string scene)
     {
         AsyncOperation operation = SceneManager.LoadSceneAsync(scene, LoadSceneMode.Additive);
         while (!operation.isDone)

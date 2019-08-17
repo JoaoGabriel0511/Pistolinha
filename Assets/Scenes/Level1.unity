@@ -830,6 +830,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Canvas
       objectReference: {fileID: 0}
+    - target: {fileID: 5600237275881986426, guid: 460a649e94f35844e9005d965d0b0a76,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5600237275881986430, guid: 460a649e94f35844e9005d965d0b0a76,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1051,5 +1056,10 @@ PrefabInstance:
       propertyPath: cannon
       value: 
       objectReference: {fileID: 205871322}
+    - target: {fileID: 5600237276737154587, guid: 460a649e94f35844e9005d965d0b0a76,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 460a649e94f35844e9005d965d0b0a76, type: 3}
