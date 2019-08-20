@@ -55,7 +55,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            LoadScene("StageSelection");
+            LoadScene("WorldSelect");
         }
     }
 
@@ -139,7 +139,7 @@ public class GameManager : MonoBehaviour
             LoadScene("Level"+(currentLevel+1));
         else
         {
-            LoadScene("LevelSelection");
+            LoadScene("WorldSelect");
         }
     }
 
