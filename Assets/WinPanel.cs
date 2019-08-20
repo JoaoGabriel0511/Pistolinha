@@ -43,7 +43,7 @@ public class WinPanel : MonoBehaviour
     }
 
     public void LoadMap() {
-        GameManager.Instance.LoadScene("StageSelectionW1");
+        GameManager.Instance.LoadScene("WorldSelect");
     }
 
     public void LoadSameLevel() {
