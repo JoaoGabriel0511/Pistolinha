@@ -8,6 +8,7 @@ public class LevelSelectionButton : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI levelLabel;
     [SerializeField] Image lockIcon;
+    [SerializeField] GameObject stageSelectPanel;
     int index = -1;
 
     void Start()
@@ -32,11 +33,7 @@ public class LevelSelectionButton : MonoBehaviour
     {
         int level;
         int.TryParse(levelLabel.text, out level);
-
-        
-        if (level <= GameManager.Instance.LastPlayed())
-        {
-            GameManager.Instance.LoadScene("Level"+level);
-        }
+        stageSelectPanel.SetActive(true);
+        stageSelectPanel.GetComponent<stagePanel>().level = level; 
     }
 }

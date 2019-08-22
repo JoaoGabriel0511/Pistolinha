@@ -146,7 +146,10 @@ public class Cannon : MonoBehaviour {
         _animator.SetBool("isShooting", true);
 
 		StartCoroutine("MakeShootSFX");
-	}
+        if (GetComponent<LevelManager>() != null) {
+            GetComponent<LevelManager>().CountShoot();
+        }
+    }
 
     IEnumerator MakeShootSFX() {
         yield return new WaitForSeconds(0.175f);

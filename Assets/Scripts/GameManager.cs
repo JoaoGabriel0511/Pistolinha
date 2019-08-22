@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -32,6 +33,11 @@ public class GameManager : MonoBehaviour
         SceneManager.sceneLoaded += OnSceneLoaded;
     }
 
+    internal void LoadSameLevel() {
+        int currentLevel = int.Parse(SceneManager.GetActiveScene().name.Remove(0, "Level".Length));
+        LoadScene("Level" + (currentLevel));
+    }
+
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         if (scene.name != "GameGUI") SceneManager.SetActiveScene(scene);
@@ -41,6 +47,7 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
+        // LoadScene("LoadingScreen");
         if (LastPlayed() == 0)
         {
             StageCleared(0);
@@ -48,7 +55,7 @@ public class GameManager : MonoBehaviour
         }
         else
         {
-            LoadScene("StageSelection");
+            LoadScene("WorldSelect");
         }
     }
 
@@ -86,7 +93,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    IEnumerator LoadSceneAsync(string scene)
+    public IEnumerator LoadSceneAsync(string scene)
     {
         AsyncOperation operation = SceneManager.LoadSceneAsync(scene, LoadSceneMode.Additive);
         while (!operation.isDone)
@@ -132,7 +139,7 @@ public class GameManager : MonoBehaviour
             LoadScene("Level"+(currentLevel+1));
         else
         {
-            LoadScene("LevelSelection");
+            LoadScene("WorldSelect");
         }
     }
 
