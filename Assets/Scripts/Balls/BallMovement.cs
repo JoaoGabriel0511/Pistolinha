@@ -17,7 +17,6 @@ public class BallMovement : MonoBehaviour {
     //  Internal references
 	protected Rigidbody2D _rb2D;
 	protected BallAttribute _ballAttr;
-    AudioEmitter _audioEmitter;
     Animator _animator;
 
     public Constants.Type Type
@@ -29,7 +28,6 @@ public class BallMovement : MonoBehaviour {
     protected void Awake() {
 		_rb2D = GetComponent<Rigidbody2D>();
 		_ballAttr = GetComponent<BallAttribute>();
-        _audioEmitter = GetComponent<AudioEmitter>();
         _animator = GetComponentInChildren<Animator>();
         sound = Sound.DEATH;
 	}
@@ -74,9 +72,9 @@ public class BallMovement : MonoBehaviour {
 		transform.position = wall.transform.position;
 		ColisionWithWall(wall.Angle);
 
-		
-        _audioEmitter.ChangeSound((int)Sound.BOUNCE);
-        _audioEmitter.PlaySound();
+		//  change for audioSource
+        //_audioEmitter.ChangeSound((int)Sound.BOUNCE);
+        //_audioEmitter.PlaySound();
 
 		yield return new WaitForSeconds(dt / 2);
 		_ballAttr.SetColiding(false);
@@ -94,14 +92,16 @@ public class BallMovement : MonoBehaviour {
 		_ballAttr.SetColiding(false);
 		GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
 
-        _audioEmitter.ChangeSound((int)Sound.DEATH);
-        _audioEmitter.PlaySound();
+        //  change for audioSource
+        //_audioEmitter.ChangeSound((int)Sound.DEATH);
+        //_audioEmitter.PlaySound();
         _animator.SetBool("explodeWall", true);
 	}
 
 	protected IEnumerator MakePhase() {
-        _audioEmitter.ChangeSound((int)Sound.PHASE);
-		yield break;
+        //  change for audioSource
+        //_audioEmitter.ChangeSound((int)Sound.PHASE);
+        yield break;
 	}
 
 	public void SetRotation(Quaternion rotation) {

@@ -20,8 +20,7 @@ public class Cannon : MonoBehaviour {
 	Constants.Type selectedColor = Constants.Type.RED;
 	SpriteRenderer _spriteRenderer;
     Animator _animator;
-    AudioEmitter _audioEmitter;
-
+    
 	[SerializeField] int _typeVar = (int)Constants.Type.RED;
 
     ColorMunition[] colorMunition;
@@ -29,7 +28,6 @@ public class Cannon : MonoBehaviour {
 	void Awake() {
 		_spriteRenderer = GetComponentInChildren<SpriteRenderer>();
         _animator = GetComponentInChildren<Animator>();
-        _audioEmitter = GetComponent<AudioEmitter>();
 
 		if (!_spriteRenderer) {
 			Debug.Log("No SpriteRenderer found.");
@@ -146,7 +144,6 @@ public class Cannon : MonoBehaviour {
 
     private void Shoot() {
         _animator.SetBool("isShooting", true);
-		_audioEmitter.PlaySound();
 
 		StartCoroutine("MakeShootSFX");
 	}
