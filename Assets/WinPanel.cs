@@ -23,15 +23,15 @@ public class WinPanel : MonoBehaviour
     {
         shootCount = FindObjectOfType<LevelManager>().GetShootCount();
         if(shootCount < FindObjectOfType<LevelManager>().GetShootsFor1Star()) {
-            gameObject.transform.FindChild("Star1").gameObject.SetActive(true);
+            gameObject.transform.Find("Star1").gameObject.SetActive(true);
         }
         if (shootCount < FindObjectOfType<LevelManager>().GetShootsFor2Stars()) {
-            gameObject.transform.FindChild("Star2").gameObject.SetActive(true);
+            gameObject.transform.Find("Star2").gameObject.SetActive(true);
         }
         if (shootCount < FindObjectOfType<LevelManager>().GetShootsFor3Stars()) {
-            gameObject.transform.FindChild("Star3").gameObject.SetActive(true);
+            gameObject.transform.Find("Star3").gameObject.SetActive(true);
         }
-        TextMeshProUGUI textMeshPro = gameObject.transform.FindChild("TotalShoots").gameObject.GetComponent<TextMeshProUGUI>();
+        TextMeshProUGUI textMeshPro = gameObject.transform.Find("TotalShoots").gameObject.GetComponent<TextMeshProUGUI>();
         Debug.Log(textMeshPro);
         textMeshPro.text = "Shoots: " + shootCount;
         gameObject.SetActive(true);
