@@ -744,8 +744,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aafc9106942abab46ba0fc409c37cb04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectSound:
-  - 
 --- !u!114 &472471090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -881,8 +879,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aafc9106942abab46ba0fc409c37cb04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectSound:
-  - 
 --- !u!114 &493901646
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2577,10 +2573,10 @@ RectTransform:
   m_Father: {fileID: 1419118279}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -5.1914825, y: -274.23703}
-  m_SizeDelta: {x: 213.7309, y: -152.09998}
+  m_AnchorMin: {x: 0.5, y: 0.5981588}
+  m_AnchorMax: {x: 0.5, y: 0.5981588}
+  m_AnchoredPosition: {x: -4.6914825, y: -316.23703}
+  m_SizeDelta: {x: 454.7309, y: 275.90002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1419118275
 GameObject:
@@ -3245,8 +3241,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aafc9106942abab46ba0fc409c37cb04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectSound:
-  - 
 --- !u!114 &1663161665
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3778,8 +3772,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aafc9106942abab46ba0fc409c37cb04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectSound:
-  - 
 --- !u!114 &1849479864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3926,8 +3918,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aafc9106942abab46ba0fc409c37cb04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectSound:
-  - 
 --- !u!114 &1923342955
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4045,10 +4035,10 @@ RectTransform:
   m_Father: {fileID: 1419118279}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -104.43199, y: 203.46246}
-  m_SizeDelta: {x: 81.1, y: 53.18}
+  m_AnchorMin: {x: 0.0746888, y: 0.96500003}
+  m_AnchorMax: {x: 0.0746888, y: 0.96500003}
+  m_AnchoredPosition: {x: -1.4319916, y: 4.4624634}
+  m_SizeDelta: {x: 81.1, y: 53.179993}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1952333103
 MonoBehaviour:
@@ -4514,8 +4504,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aafc9106942abab46ba0fc409c37cb04, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  selectSound:
-  - 
 --- !u!114 &2133222564
 MonoBehaviour:
   m_ObjectHideFlags: 0
