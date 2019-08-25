@@ -669,6 +669,12 @@ PrefabInstance:
       propertyPath: stageSelectPanel
       value: 
       objectReference: {fileID: 295230798}
+    - target: {fileID: 4148965688556112811, guid: 1fca31618e9208e45b4053a7f9535f30,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 277ee8ebcd74a474d872944142fa7693,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fca31618e9208e45b4053a7f9535f30, type: 3}
 --- !u!224 &90927612 stripped
@@ -1226,6 +1232,12 @@ PrefabInstance:
       propertyPath: stageSelectPanel
       value: 
       objectReference: {fileID: 295230798}
+    - target: {fileID: 4148965688556112811, guid: 1fca31618e9208e45b4053a7f9535f30,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 277ee8ebcd74a474d872944142fa7693,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fca31618e9208e45b4053a7f9535f30, type: 3}
 --- !u!224 &373816529 stripped
@@ -1356,6 +1368,12 @@ PrefabInstance:
       propertyPath: stageSelectPanel
       value: 
       objectReference: {fileID: 295230798}
+    - target: {fileID: 4148965688556112811, guid: 1fca31618e9208e45b4053a7f9535f30,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 277ee8ebcd74a474d872944142fa7693,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fca31618e9208e45b4053a7f9535f30, type: 3}
 --- !u!224 &375109623 stripped
@@ -1780,6 +1798,12 @@ PrefabInstance:
       propertyPath: stageSelectPanel
       value: 
       objectReference: {fileID: 295230798}
+    - target: {fileID: 4148965688556112811, guid: 1fca31618e9208e45b4053a7f9535f30,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 277ee8ebcd74a474d872944142fa7693,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fca31618e9208e45b4053a7f9535f30, type: 3}
 --- !u!224 &571478167 stripped
@@ -2369,6 +2393,12 @@ PrefabInstance:
       propertyPath: stageSelectPanel
       value: 
       objectReference: {fileID: 295230798}
+    - target: {fileID: 4148965688556112811, guid: 1fca31618e9208e45b4053a7f9535f30,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 277ee8ebcd74a474d872944142fa7693,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fca31618e9208e45b4053a7f9535f30, type: 3}
 --- !u!224 &912858292 stripped
@@ -2499,6 +2529,12 @@ PrefabInstance:
       propertyPath: stageSelectPanel
       value: 
       objectReference: {fileID: 295230798}
+    - target: {fileID: 4148965688556112811, guid: 1fca31618e9208e45b4053a7f9535f30,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 277ee8ebcd74a474d872944142fa7693,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fca31618e9208e45b4053a7f9535f30, type: 3}
 --- !u!224 &976579501 stripped
@@ -3633,6 +3669,12 @@ PrefabInstance:
       propertyPath: stageSelectPanel
       value: 
       objectReference: {fileID: 295230798}
+    - target: {fileID: 4148965688556112811, guid: 1fca31618e9208e45b4053a7f9535f30,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 277ee8ebcd74a474d872944142fa7693,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fca31618e9208e45b4053a7f9535f30, type: 3}
 --- !u!224 &1344004554 stripped
@@ -4120,6 +4162,12 @@ PrefabInstance:
       propertyPath: stageSelectPanel
       value: 
       objectReference: {fileID: 295230798}
+    - target: {fileID: 4148965688556112811, guid: 1fca31618e9208e45b4053a7f9535f30,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 277ee8ebcd74a474d872944142fa7693,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fca31618e9208e45b4053a7f9535f30, type: 3}
 --- !u!224 &1434504964 stripped
@@ -5640,6 +5688,12 @@ PrefabInstance:
       propertyPath: stageSelectPanel
       value: 
       objectReference: {fileID: 295230798}
+    - target: {fileID: 4148965688556112811, guid: 1fca31618e9208e45b4053a7f9535f30,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 277ee8ebcd74a474d872944142fa7693,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fca31618e9208e45b4053a7f9535f30, type: 3}
 --- !u!224 &2017870247 stripped
@@ -5770,6 +5824,12 @@ PrefabInstance:
       propertyPath: stageSelectPanel
       value: 
       objectReference: {fileID: 295230798}
+    - target: {fileID: 4148965688556112811, guid: 1fca31618e9208e45b4053a7f9535f30,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 277ee8ebcd74a474d872944142fa7693,
+        type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fca31618e9208e45b4053a7f9535f30, type: 3}
 --- !u!224 &2053849047 stripped

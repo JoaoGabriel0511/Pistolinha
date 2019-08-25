@@ -2975,6 +2975,12 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OnClick
       objectReference: {fileID: 0}
+    - target: {fileID: 4148965688556112811, guid: 1fca31618e9208e45b4053a7f9535f30,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 277ee8ebcd74a474d872944142fa7693,
+        type: 3}
     m_RemovedComponents:
     - {fileID: 4148965688556112813, guid: 1fca31618e9208e45b4053a7f9535f30, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1fca31618e9208e45b4053a7f9535f30, type: 3}
@@ -3878,7 +3884,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.0746888, y: 0.96500003}
   m_AnchorMax: {x: 0.0746888, y: 0.96500003}
-  m_AnchoredPosition: {x: 2.6, y: -5}
+  m_AnchoredPosition: {x: 2.600006, y: -5}
   m_SizeDelta: {x: 80, y: 80}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1952333103
