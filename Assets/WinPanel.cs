@@ -9,27 +9,25 @@ public class WinPanel : MonoBehaviour
     private int shootCount;
     void Start()
     {
-        FindObjectOfType<Goal>().StageCleared.AddListener(OnStageCleared);
+        FindObjectOfType<Goal>().StageCleared.AddListener(() => {
+            Debug.Log("Acabou sim");
+            OnStageCleared();
+            });
         gameObject.SetActive(false);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     void OnStageCleared()
     {
+        Debug.Log("ACABOU");
         shootCount = FindObjectOfType<LevelManager>().GetShootCount();
         if(shootCount < FindObjectOfType<LevelManager>().GetShootsFor1Star()) {
-            gameObject.transform.Find("Star1").gameObject.SetActive(true);
+            gameObject.transform.Find("victory screen").gameObject.transform.Find("Star1").gameObject.SetActive(true);
         }
         if (shootCount < FindObjectOfType<LevelManager>().GetShootsFor2Stars()) {
-            gameObject.transform.Find("Star2").gameObject.SetActive(true);
+            gameObject.transform.Find("victory screen").gameObject.transform.Find("Star2").gameObject.SetActive(true);
         }
         if (shootCount < FindObjectOfType<LevelManager>().GetShootsFor3Stars()) {
-            gameObject.transform.Find("Star3").gameObject.SetActive(true);
+            gameObject.transform.Find("victory screen").gameObject.transform.Find("Star3").gameObject.SetActive(true);
         }
         TextMeshProUGUI textMeshPro = gameObject.transform.Find("TotalShoots").gameObject.GetComponent<TextMeshProUGUI>();
         Debug.Log(textMeshPro);
