@@ -542,10 +542,10 @@ RectTransform:
   m_Father: {fileID: 2101398916}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5.1914825, y: -274.23703}
-  m_SizeDelta: {x: 455.7309, y: 275.90002}
+  m_AnchorMin: {x: 0.22763415, y: 0.35200003}
+  m_AnchorMax: {x: 0.68, y: 0.51558745}
+  m_AnchoredPosition: {x: -0.0000054836, y: -270}
+  m_SizeDelta: {x: 349.09998, y: 226.29999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &90927611
 PrefabInstance:
@@ -664,17 +664,17 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 4148965688556112813, guid: 1fca31618e9208e45b4053a7f9535f30,
-        type: 3}
-      propertyPath: stageSelectPanel
-      value: 
-      objectReference: {fileID: 295230798}
     - target: {fileID: 4148965688556112811, guid: 1fca31618e9208e45b4053a7f9535f30,
         type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 277ee8ebcd74a474d872944142fa7693,
         type: 3}
+    - target: {fileID: 4148965688556112813, guid: 1fca31618e9208e45b4053a7f9535f30,
+        type: 3}
+      propertyPath: stageSelectPanel
+      value: 
+      objectReference: {fileID: 295230798}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fca31618e9208e45b4053a7f9535f30, type: 3}
 --- !u!224 &90927612 stripped
@@ -1227,17 +1227,17 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 4148965688556112813, guid: 1fca31618e9208e45b4053a7f9535f30,
-        type: 3}
-      propertyPath: stageSelectPanel
-      value: 
-      objectReference: {fileID: 295230798}
     - target: {fileID: 4148965688556112811, guid: 1fca31618e9208e45b4053a7f9535f30,
         type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 277ee8ebcd74a474d872944142fa7693,
         type: 3}
+    - target: {fileID: 4148965688556112813, guid: 1fca31618e9208e45b4053a7f9535f30,
+        type: 3}
+      propertyPath: stageSelectPanel
+      value: 
+      objectReference: {fileID: 295230798}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fca31618e9208e45b4053a7f9535f30, type: 3}
 --- !u!224 &373816529 stripped
@@ -1363,17 +1363,17 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 4148965688556112813, guid: 1fca31618e9208e45b4053a7f9535f30,
-        type: 3}
-      propertyPath: stageSelectPanel
-      value: 
-      objectReference: {fileID: 295230798}
     - target: {fileID: 4148965688556112811, guid: 1fca31618e9208e45b4053a7f9535f30,
         type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 277ee8ebcd74a474d872944142fa7693,
         type: 3}
+    - target: {fileID: 4148965688556112813, guid: 1fca31618e9208e45b4053a7f9535f30,
+        type: 3}
+      propertyPath: stageSelectPanel
+      value: 
+      objectReference: {fileID: 295230798}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fca31618e9208e45b4053a7f9535f30, type: 3}
 --- !u!224 &375109623 stripped
@@ -1551,7 +1551,6 @@ GameObject:
   - component: {fileID: 550822610}
   - component: {fileID: 550822609}
   - component: {fileID: 550822608}
-  - component: {fileID: 550822607}
   m_Layer: 5
   m_Name: Button (1)
   m_TagString: Untagged
@@ -1579,20 +1578,6 @@ RectTransform:
   m_AnchoredPosition: {x: 232, y: -221.9}
   m_SizeDelta: {x: 160, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &550822607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 550822605}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aafc9106942abab46ba0fc409c37cb04, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  selectSound:
-  - 
 --- !u!114 &550822608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1635,7 +1620,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 550822609}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &550822609
@@ -1793,17 +1789,17 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 4148965688556112813, guid: 1fca31618e9208e45b4053a7f9535f30,
-        type: 3}
-      propertyPath: stageSelectPanel
-      value: 
-      objectReference: {fileID: 295230798}
     - target: {fileID: 4148965688556112811, guid: 1fca31618e9208e45b4053a7f9535f30,
         type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 277ee8ebcd74a474d872944142fa7693,
         type: 3}
+    - target: {fileID: 4148965688556112813, guid: 1fca31618e9208e45b4053a7f9535f30,
+        type: 3}
+      propertyPath: stageSelectPanel
+      value: 
+      objectReference: {fileID: 295230798}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fca31618e9208e45b4053a7f9535f30, type: 3}
 --- !u!224 &571478167 stripped
@@ -2388,17 +2384,17 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 4148965688556112813, guid: 1fca31618e9208e45b4053a7f9535f30,
-        type: 3}
-      propertyPath: stageSelectPanel
-      value: 
-      objectReference: {fileID: 295230798}
     - target: {fileID: 4148965688556112811, guid: 1fca31618e9208e45b4053a7f9535f30,
         type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 277ee8ebcd74a474d872944142fa7693,
         type: 3}
+    - target: {fileID: 4148965688556112813, guid: 1fca31618e9208e45b4053a7f9535f30,
+        type: 3}
+      propertyPath: stageSelectPanel
+      value: 
+      objectReference: {fileID: 295230798}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fca31618e9208e45b4053a7f9535f30, type: 3}
 --- !u!224 &912858292 stripped
@@ -2524,17 +2520,17 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 4148965688556112813, guid: 1fca31618e9208e45b4053a7f9535f30,
-        type: 3}
-      propertyPath: stageSelectPanel
-      value: 
-      objectReference: {fileID: 295230798}
     - target: {fileID: 4148965688556112811, guid: 1fca31618e9208e45b4053a7f9535f30,
         type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 277ee8ebcd74a474d872944142fa7693,
         type: 3}
+    - target: {fileID: 4148965688556112813, guid: 1fca31618e9208e45b4053a7f9535f30,
+        type: 3}
+      propertyPath: stageSelectPanel
+      value: 
+      objectReference: {fileID: 295230798}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fca31618e9208e45b4053a7f9535f30, type: 3}
 --- !u!224 &976579501 stripped
@@ -3664,17 +3660,17 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 4148965688556112813, guid: 1fca31618e9208e45b4053a7f9535f30,
-        type: 3}
-      propertyPath: stageSelectPanel
-      value: 
-      objectReference: {fileID: 295230798}
     - target: {fileID: 4148965688556112811, guid: 1fca31618e9208e45b4053a7f9535f30,
         type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 277ee8ebcd74a474d872944142fa7693,
         type: 3}
+    - target: {fileID: 4148965688556112813, guid: 1fca31618e9208e45b4053a7f9535f30,
+        type: 3}
+      propertyPath: stageSelectPanel
+      value: 
+      objectReference: {fileID: 295230798}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fca31618e9208e45b4053a7f9535f30, type: 3}
 --- !u!224 &1344004554 stripped
@@ -4157,17 +4153,17 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 4148965688556112813, guid: 1fca31618e9208e45b4053a7f9535f30,
-        type: 3}
-      propertyPath: stageSelectPanel
-      value: 
-      objectReference: {fileID: 295230798}
     - target: {fileID: 4148965688556112811, guid: 1fca31618e9208e45b4053a7f9535f30,
         type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 277ee8ebcd74a474d872944142fa7693,
         type: 3}
+    - target: {fileID: 4148965688556112813, guid: 1fca31618e9208e45b4053a7f9535f30,
+        type: 3}
+      propertyPath: stageSelectPanel
+      value: 
+      objectReference: {fileID: 295230798}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fca31618e9208e45b4053a7f9535f30, type: 3}
 --- !u!224 &1434504964 stripped
@@ -5683,17 +5679,17 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 4148965688556112813, guid: 1fca31618e9208e45b4053a7f9535f30,
-        type: 3}
-      propertyPath: stageSelectPanel
-      value: 
-      objectReference: {fileID: 295230798}
     - target: {fileID: 4148965688556112811, guid: 1fca31618e9208e45b4053a7f9535f30,
         type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 277ee8ebcd74a474d872944142fa7693,
         type: 3}
+    - target: {fileID: 4148965688556112813, guid: 1fca31618e9208e45b4053a7f9535f30,
+        type: 3}
+      propertyPath: stageSelectPanel
+      value: 
+      objectReference: {fileID: 295230798}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fca31618e9208e45b4053a7f9535f30, type: 3}
 --- !u!224 &2017870247 stripped
@@ -5819,17 +5815,17 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
-    - target: {fileID: 4148965688556112813, guid: 1fca31618e9208e45b4053a7f9535f30,
-        type: 3}
-      propertyPath: stageSelectPanel
-      value: 
-      objectReference: {fileID: 295230798}
     - target: {fileID: 4148965688556112811, guid: 1fca31618e9208e45b4053a7f9535f30,
         type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 277ee8ebcd74a474d872944142fa7693,
         type: 3}
+    - target: {fileID: 4148965688556112813, guid: 1fca31618e9208e45b4053a7f9535f30,
+        type: 3}
+      propertyPath: stageSelectPanel
+      value: 
+      objectReference: {fileID: 295230798}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1fca31618e9208e45b4053a7f9535f30, type: 3}
 --- !u!224 &2053849047 stripped
