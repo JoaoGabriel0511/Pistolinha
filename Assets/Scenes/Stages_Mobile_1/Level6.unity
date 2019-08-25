@@ -135,7 +135,7 @@ PrefabInstance:
     - target: {fileID: 5629405269267201885, guid: 1ac6cdf2898002b41ae6336f7cc99b8e,
         type: 3}
       propertyPath: _redEnable
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3506475266882196276, guid: 1ac6cdf2898002b41ae6336f7cc99b8e,
         type: 3}

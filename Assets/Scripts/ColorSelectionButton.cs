@@ -13,6 +13,11 @@ public class ColorSelectionButton : MonoBehaviour {
 		if (!cannon) {
 			Debug.Log("Cannon not found!");
 		}
+		else {
+			if (!cannon.ColorIsEnable(tipo)) {
+				gameObject.SetActive(false);
+			}
+		}
 		if (!btn) {
 			Debug.Log("Button component doesn't exist!");
 		}

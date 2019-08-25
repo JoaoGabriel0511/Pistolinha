@@ -35,6 +35,19 @@ public class Cannon : MonoBehaviour {
 		}
 	}
 
+	public bool ColorIsEnable(Constants.Type tipo) {
+		switch (tipo) {
+			case Constants.Type.BLUE:
+				return _blueEnable;
+			case Constants.Type.RED:
+				return _redEnable;
+			case Constants.Type.GREEN:
+				return _greenEnable;
+			default:
+				return true;
+		}
+	}
+
 	public void ChangeColor(Constants.Type type) {
 		switch (type) {
 			case Constants.Type.BLUE:

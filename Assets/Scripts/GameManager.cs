@@ -121,4 +121,11 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 
+	public void LoadWorldSelect() {
+		LoadScene("WorldSelect");
+	}
+
+	public void LoadTitleScreen() {
+		LoadScene("TitleScreen");
+	}
 }
