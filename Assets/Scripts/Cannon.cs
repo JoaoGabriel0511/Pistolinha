@@ -35,17 +35,6 @@ public class Cannon : MonoBehaviour {
 		}
 	}
 
-	void Update() {
-		if (Input.GetMouseButtonDown(0)) {
-			Vector3 mousePos = Input.mousePosition;
-			Bounds bounds = _collider2D.bounds;
-			Vector2 size = _collider2D.size;
-			if (new Rect(bounds.min.x, bounds.min.y, size.x, size.y).Contains(Camera.main.ScreenToWorldPoint(mousePos))) {
-				Shoot();
-			}
-		}
-	}
-
 	public void ChangeColor(Constants.Type type) {
 		switch (type) {
 			case Constants.Type.BLUE:
