@@ -61,9 +61,9 @@ public class Cannon : MonoBehaviour {
 				break;
 		}
 	}
-	public void SwitchToGreen() => selectedColor = Constants.Type.GREEN;
-	public void SwitchToBlue() => selectedColor = Constants.Type.BLUE;
-	public void SwitchToRed() => selectedColor = Constants.Type.RED;
+	void SwitchToGreen() => selectedColor = Constants.Type.GREEN;
+	void SwitchToBlue() => selectedColor = Constants.Type.BLUE;
+	void SwitchToRed() => selectedColor = Constants.Type.RED;
 	/*
 		void SwitchToPreviousBall() {
 			switch (selectedColor) {
@@ -97,7 +97,7 @@ public class Cannon : MonoBehaviour {
 			}
 		}
 	*/
-	private void Shoot() {
+	public void Shoot() {
 		StartCoroutine("MakeShot");
 
 		if (GetComponent<LevelManager>() != null && selectedColor != Constants.Type.NONE) {
