@@ -1,7 +1,5 @@
 ﻿using UnityEngine;
 
 public class KillOutOfVision : MonoBehaviour {
-	void OnBecameInvisible() {
-
-	}
+	void OnBecameInvisible() => Destroy(transform.parent.gameObject);
 }
