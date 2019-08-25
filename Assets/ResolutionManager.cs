@@ -4,92 +4,109 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class ResolutionManager : MonoBehaviour
-{
-    #region Attributes
+public class ResolutionManager : MonoBehaviour {
+	#region Attributes
 
-    #region Player Pref Key Constants
+	#region Player Pref Key Constants
 
-    private const string RESOLUTION_PREF_KEY = "resolution";
+	private const string RESOLUTION_PREF_KEY = "resolution";
 
-    #endregion
+	#endregion
 
-    #region Resolution
+	#region Resolution
 
-    [SerializeField] private TextMeshProUGUI resolutionText;
-    private Resolution[] resolutions;
-    private int currentResolutionIndex = 0;
+	[SerializeField] private TextMeshProUGUI resolutionText;
+	struct Res {
+		public int width;
+		public int height;
+	}
+	private Res[] resolutions;
+	private int currentResolutionIndex = 0;
 
-    #endregion
+	#endregion
 
-    #endregion
+	#endregion
 
 
-    #region Helpers
+	#region Helpers
 
-    #region IndexWrappers
-    private int GetNextWrappedIndex<T>(IList<T> collection, int currentIndex) {
-        if(collection.Count < 1) return 0;
-        return (currentIndex + 1) % collection.Count;
-    }
+	#region IndexWrappers
+	private int GetNextWrappedIndex<T>(IList<T> collection, int currentIndex) {
+		if (collection.Count < 1) return 0;
+		return (currentIndex + 1) % collection.Count;
+	}
 
-    private int GetPreviousWrappedIndex<T>(IList<T> collection, int currentIndex) {
-        if (collection.Count < 1) return 0;
-        if ((currentIndex - 1) < 0) return collection.Count - 1;
-        return (currentIndex - 1) % collection.Count;
-    }
+	private int GetPreviousWrappedIndex<T>(IList<T> collection, int currentIndex) {
+		if (collection.Count < 1) return 0;
+		if ((currentIndex - 1) < 0) return collection.Count - 1;
+		return (currentIndex - 1) % collection.Count;
+	}
 
-    #endregion
+	#endregion
 
-    #endregion
+	#endregion
 
-    #region Resolution cycling
+	#region Resolution cycling
 
-    private void SetResolutionText(Resolution resolution) {
-        resolutionText.text = resolution.width + "X" + resolution.height;
-    }
+	private void SetResolutionText(Res resolution) {
+		resolutionText.text = resolution.width + "X" + resolution.height;
+	}
 
-    public void SetNextResolution() {
-        currentResolutionIndex = GetNextWrappedIndex(resolutions, currentResolutionIndex);
-        SetResolutionText(resolutions[currentResolutionIndex]);
-    }
+	public void SetNextResolution() {
+		currentResolutionIndex = GetNextWrappedIndex(resolutions, currentResolutionIndex);
+		SetResolutionText(resolutions[currentResolutionIndex]);
+	}
 
-    public void SetPreviousResolution() {
-        currentResolutionIndex = GetPreviousWrappedIndex(resolutions, currentResolutionIndex);
-        SetResolutionText(resolutions[currentResolutionIndex]);
-    }
+	public void SetPreviousResolution() {
+		currentResolutionIndex = GetPreviousWrappedIndex(resolutions, currentResolutionIndex);
+		SetResolutionText(resolutions[currentResolutionIndex]);
+	}
 
-    #endregion
+	#endregion
 
-    private void Start() {
-        resolutions = Screen.resolutions;
+	private void Start() {
+		//resolutions = Screen.resolutions;
+		resolutions = new Res[4];
+		// 0
+		resolutions[0].width = 360;
+		resolutions[0].height = 640;
+		// 1
+		resolutions[1].width = 240;
+		resolutions[1].height = 426;
+		// 2
+		resolutions[2].width = 144;
+		resolutions[2].height = 256;
+		// 3
+		resolutions[3].width = 540;
+		resolutions[3].height = 960;
 
-        currentResolutionIndex = PlayerPrefs.GetInt(RESOLUTION_PREF_KEY, 0);
+		//currentResolutionIndex = PlayerPrefs.GetInt(RESOLUTION_PREF_KEY, 0);
+		currentResolutionIndex = 0;
 
-        SetResolutionText(resolutions[currentResolutionIndex]);
-    }
+		SetResolutionText(resolutions[currentResolutionIndex]);
+	}
 
-    #region Apply Resolution
+	#region Apply Resolution
 
-    private void SetAndApplyResolution(int newResolutionIndex) {
-        currentResolutionIndex = newResolutionIndex;
-        ApplyCurrentResolution();
-    }
+	private void SetAndApplyResolution(int newResolutionIndex) {
+		currentResolutionIndex = newResolutionIndex;
+		ApplyCurrentResolution();
+	}
 
-    private void ApplyCurrentResolution() {
-        ApplyResolution(resolutions[currentResolutionIndex]);
-    }
+	private void ApplyCurrentResolution() {
+		ApplyResolution(resolutions[currentResolutionIndex]);
+	}
 
-    private void ApplyResolution(Resolution resolution) {
-        SetResolutionText(resolution);
-        Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
-        PlayerPrefs.SetInt(RESOLUTION_PREF_KEY, currentResolutionIndex);
-    }
+	private void ApplyResolution(Res resolution) {
+		SetResolutionText(resolution);
+		Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+		//PlayerPrefs.SetInt(RESOLUTION_PREF_KEY, currentResolutionIndex);
+	}
 
-    #endregion
+	#endregion
 
-    public void ApplyChanges() {
-        SetAndApplyResolution(currentResolutionIndex);
-    } 
+	public void ApplyChanges() {
+		SetAndApplyResolution(currentResolutionIndex);
+	}
 
 }
