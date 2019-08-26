@@ -6,34 +6,30 @@ using TMPro;
 
 public class LevelSelectionButton : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI levelLabel;
-    [SerializeField] Image lockIcon;
+    [SerializeField] int levelNro;
+    [SerializeField] Sprite lockedSprite;
+    [SerializeField] Sprite unlockedSprite;
     [SerializeField] GameObject stageSelectPanel;
     int index = -1;
+    bool locked = true;
 
     void Start()
     {
-        for (int i = 0; i < transform.parent.childCount; i++)
+        if(GameManager.Instance.LastPlayed() >= levelNro)
         {
-            if (gameObject == transform.parent.GetChild(i).gameObject)
-            {
-                index = i + 1;
-                break;
-            }
-        }
-        levelLabel.text = index.ToString();
-        if(GameManager.Instance.LastPlayed() >= int.Parse(levelLabel.text))
-        {
-            lockIcon.gameObject.SetActive(false);
-            levelLabel.gameObject.SetActive(true); 
+            GetComponent<Image>().sprite = unlockedSprite;
+            locked = false;
+        } else {
+            GetComponent<Image>().sprite = lockedSprite;
+            locked = true;
         }
     }
 
     public void OnClick()
     {
-        int level;
-        int.TryParse(levelLabel.text, out level);
-        stageSelectPanel.SetActive(true);
-        stageSelectPanel.GetComponent<stagePanel>().level = level; 
+        if (!locked) {
+            stageSelectPanel.SetActive(true);
+            stageSelectPanel.GetComponent<stagePanel>().level = levelNro;
+        }
     }
 }
