@@ -7,6 +7,7 @@ public class Wall : MonoBehaviour, IColorful {
 	[SerializeField] Sprite red;
 	[SerializeField] Sprite blue;
 	[SerializeField] Sprite green;
+
 	SpriteRenderer _spriteRenderer;
 	ParticleSystem _particles;
 

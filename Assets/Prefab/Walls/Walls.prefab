@@ -51,6 +51,10 @@ MonoBehaviour:
   red: {fileID: 21300000, guid: de77f883e44c50f40a62d6a6c4c3f743, type: 3}
   blue: {fileID: 21300000, guid: fc767b49a3b64dc419a3531e6d370967, type: 3}
   green: {fileID: 21300000, guid: 9f7008526655bb540bd17d1f1ab29787, type: 3}
+  bounce: {fileID: 0}
+  pass: {fileID: 0}
+  die: {fileID: 0}
+  sound: {fileID: 0}
 --- !u!212 &2973730601334430033
 SpriteRenderer:
   m_ObjectHideFlags: 0

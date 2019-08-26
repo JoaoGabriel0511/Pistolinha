@@ -5,13 +5,19 @@ using UnityEngine.Events;
 
 public class BallMovement : MonoBehaviour {
 
+	[SerializeField] AudioClip bounce;
+	[SerializeField] AudioClip pass;
+	[SerializeField] AudioClip die;
+	AudioSource sound;
+
+
 	enum Sound {
 		BOUNCE,
 		DEATH,
 		PHASE,
 		VIEW_SOUND_ORDER
 	}
-	[SerializeField] Sound sound = Sound.VIEW_SOUND_ORDER;
+	//[SerializeField] Sound sound = Sound.VIEW_SOUND_ORDER;
 
 	//  Internal references
 	Rigidbody2D _rb2D;
@@ -26,6 +32,11 @@ public class BallMovement : MonoBehaviour {
 		_ballAttr = GetComponent<BallAttribute>();
 		//_animator = GetComponentInChildren<Animator>();
 		//sound = Sound.DEATH;
+
+		sound = GetComponent<AudioSource>();
+		if (!sound) {
+			Debug.Log("No audio source component!");
+		}
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {
@@ -65,6 +76,8 @@ public class BallMovement : MonoBehaviour {
 		yield return new WaitForSeconds(dt);
 		transform.position = wall.transform.position;
 		ColisionWithWall(wall.Angle);
+		sound.clip = bounce;
+		sound.Play();
 
 		//  change for audioSource
 		//_audioEmitter.ChangeSound((int)Sound.BOUNCE);
@@ -81,6 +94,8 @@ public class BallMovement : MonoBehaviour {
 		_ballAttr.SetColiding(true);
 
 		float dt = Vector3.Distance(wall.transform.position, transform.position) / _ballAttr.GetSpeed();
+		sound.clip = die;
+		sound.Play();
 		yield return new WaitForSeconds(dt);
 		transform.position = wall.transform.position;
 		_ballAttr.SetColiding(false);
@@ -98,6 +113,8 @@ public class BallMovement : MonoBehaviour {
 	protected IEnumerator MakePhase() {
 		//  change for audioSource
 		//_audioEmitter.ChangeSound((int)Sound.PHASE);
+		sound.clip = pass;
+		sound.Play();
 		yield break;
 	}
 
