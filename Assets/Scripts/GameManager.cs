@@ -128,4 +128,12 @@ public class GameManager : MonoBehaviour {
 	public void LoadTitleScreen() {
 		LoadScene("TitleScreen");
 	}
+
+	public void LoadWorld1() {
+		LoadScene("StageSelectionW1");
+	}
+
+	public void LoadCredits() {
+		LoadScene("Credits");
+	}
 }
