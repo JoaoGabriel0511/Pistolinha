@@ -9,7 +9,7 @@ public class Wall : MonoBehaviour, IColorful {
 	[SerializeField] Sprite green;
 
 	SpriteRenderer _spriteRenderer;
-	ParticleSystem _particles;
+	//ParticleSystem _particles;
 
 	public float Angle {
 		get { return transform.rotation.eulerAngles.z; }
@@ -17,7 +17,7 @@ public class Wall : MonoBehaviour, IColorful {
 
 	void Awake() {
 		_spriteRenderer = GetComponent<SpriteRenderer>();
-		_particles = GetComponent<ParticleSystem>();
+		//_particles = GetComponent<ParticleSystem>();
 
 		if (!_spriteRenderer) {
 			Debug.Log("No SpriteRenderer found.");
@@ -29,20 +29,20 @@ public class Wall : MonoBehaviour, IColorful {
 	}
 
 	void UpdateColor() {
-		ParticleSystem.MainModule settings = _particles.main;
+		//ParticleSystem.MainModule settings = _particles.main;
 
 		switch (_color) {
 			case Constants.Type.RED:
 				_spriteRenderer.sprite = red;
-				settings.startColor = Color.red;
+				//settings.startColor = Color.red;
 				break;
 			case Constants.Type.GREEN:
 				_spriteRenderer.sprite = green;
-				settings.startColor = Color.green;
+				//settings.startColor = Color.green;
 				break;
 			case Constants.Type.BLUE:
 				_spriteRenderer.sprite = blue;
-				settings.startColor = Color.blue;
+				//settings.startColor = Color.blue;
 				break;
 		}
 	}
@@ -54,7 +54,7 @@ public class Wall : MonoBehaviour, IColorful {
 				_color = ball.GetColor();
 				UpdateColor();
 			}
-			_particles.Play();
+			//_particles.Play();
 		}
 	}
 }
