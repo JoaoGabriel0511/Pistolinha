@@ -15,11 +15,13 @@ public class Cannon : MonoBehaviour {
 	[SerializeField] Constants.Type selectedColor = Constants.Type.NONE;
 	SpriteRenderer _spriteRenderer;
 	BoxCollider2D _collider2D;
+	AudioSource sound;
 	//Animator _animator;
 
 	void Awake() {
 		_spriteRenderer = GetComponentInChildren<SpriteRenderer>();
 		_collider2D = GetComponentInChildren<BoxCollider2D>();
+		sound = GetComponent<AudioSource>();
 		//_animator = GetComponentInChildren<Animator>();
 
 		if (!_spriteRenderer) {
@@ -32,6 +34,9 @@ public class Cannon : MonoBehaviour {
 
 		if (!_redEnable && !_blueEnable && !_greenEnable) {
 			Debug.Log("No color enabled in the cannon!");
+		}
+		if (!sound) {
+			Debug.Log("No audio source component!");
 		}
 	}
 
@@ -130,6 +135,7 @@ public class Cannon : MonoBehaviour {
 		if (ball) {
 			ball.gameObject.SetActive(true);
 			ball.SetRotation(transform.rotation);
+			sound.Play();
 		}
 
 		yield break;

@@ -25,7 +25,16 @@ public class GameManager : MonoBehaviour {
         BGMusic.start();
         */
 
+#if UNITY_ANDROID
+		Debug.Log("Android");
+		Screen.SetResolution(540, 960, false);
+#elif UNITY_STANDALONE_WIN
+		Debug.Log("Windows");
 		Screen.SetResolution(360, 640, false);
+#else
+		Debug.Log("Other platforms");
+		Screen.SetResolution(360, 640, false);
+#endif
 
 		SceneManager.LoadScene("TitleScreen", LoadSceneMode.Additive);
 		SceneManager.sceneLoaded += OnSceneLoaded;
@@ -44,13 +53,12 @@ public class GameManager : MonoBehaviour {
 
 	public void StartGame() {
 		// LoadScene("LoadingScreen");
+		Debug.Log(PlayerPrefs.GetInt("LastPlayed", 0));
+		Debug.Log("start game");
 		if (LastPlayed() == 0) {
 			StageCleared(0);
-			LoadScene("Level1");
 		}
-		else {
-			LoadScene("WorldSelect");
-		}
+		LoadScene("StageSelectionW1");
 	}
 
 	public void UnloadActiveScene() {
@@ -110,6 +118,7 @@ public class GameManager : MonoBehaviour {
 
 	public void StageCleared(int zero) {
 		PlayerPrefs.SetInt("LastPlayed", 1);
+		//PlayerPrefs.SetInt("LastPlayed", zero);
 	}
 
 	public void LoadNextLevel() {
@@ -117,7 +126,7 @@ public class GameManager : MonoBehaviour {
 		if (currentLevel < 10)
 			LoadScene("Level" + (currentLevel + 1));
 		else {
-			LoadScene("WorldSelect");
+			LoadScene("StageSelectionW1");
 		}
 	}
 
