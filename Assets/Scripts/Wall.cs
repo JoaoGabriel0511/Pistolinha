@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class Wall : MonoBehaviour, IColorful {
 	[SerializeField] Constants.Type _color;
+	[SerializeField] Sprite red;
+	[SerializeField] Sprite blue;
+	[SerializeField] Sprite green;
+
 	SpriteRenderer _spriteRenderer;
-    ParticleSystem _particles;
+	//ParticleSystem _particles;
 
 	public float Angle {
 		get { return transform.rotation.eulerAngles.z; }
@@ -13,12 +17,11 @@ public class Wall : MonoBehaviour, IColorful {
 
 	void Awake() {
 		_spriteRenderer = GetComponent<SpriteRenderer>();
-        _particles = GetComponent<ParticleSystem>();
+		//_particles = GetComponent<ParticleSystem>();
 
 		if (!_spriteRenderer) {
 			Debug.Log("No SpriteRenderer found.");
 		}
-		UpdateColor();
 	}
 
 	public Constants.Type GetColor() {
@@ -26,21 +29,21 @@ public class Wall : MonoBehaviour, IColorful {
 	}
 
 	void UpdateColor() {
-        ParticleSystem.MainModule settings = _particles.main;
+		//ParticleSystem.MainModule settings = _particles.main;
 
-        switch (_color) {
+		switch (_color) {
 			case Constants.Type.RED:
-				_spriteRenderer.color = Color.red;
-                settings.startColor = Color.red;
-                break;
+				_spriteRenderer.sprite = red;
+				//settings.startColor = Color.red;
+				break;
 			case Constants.Type.GREEN:
-				_spriteRenderer.color = Color.green;
-                settings.startColor = Color.green;
-                break;
+				_spriteRenderer.sprite = green;
+				//settings.startColor = Color.green;
+				break;
 			case Constants.Type.BLUE:
-				_spriteRenderer.color = Color.blue;
-                settings.startColor = Color.blue;
-                break;
+				_spriteRenderer.sprite = blue;
+				//settings.startColor = Color.blue;
+				break;
 		}
 	}
 
@@ -51,7 +54,7 @@ public class Wall : MonoBehaviour, IColorful {
 				_color = ball.GetColor();
 				UpdateColor();
 			}
-            _particles.Play();
+			//_particles.Play();
 		}
 	}
 }

@@ -1,3 +1,3 @@
 ﻿public class Constants {
-	public enum Type { RED, GREEN, BLUE };
+	public enum Type { RED, GREEN, BLUE, NONE };
 }
