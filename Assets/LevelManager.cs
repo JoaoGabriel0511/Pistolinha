@@ -14,7 +14,6 @@ public class LevelManager : MonoBehaviour {
 
 	public void CountShoot() {
 		shootsFired++;
-		Debug.Log("shoots fired" + shootsFired);
 	}
 
 	public int GetShootCount() {

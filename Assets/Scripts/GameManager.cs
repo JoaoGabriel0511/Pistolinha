@@ -35,7 +35,6 @@ public class GameManager : MonoBehaviour {
 		Debug.Log("Other platforms");
 		Screen.SetResolution(360, 640, false);
 #endif
-
 		SceneManager.LoadScene("TitleScreen", LoadSceneMode.Additive);
 		SceneManager.sceneLoaded += OnSceneLoaded;
 	}
@@ -101,8 +100,11 @@ public class GameManager : MonoBehaviour {
 		return PlayerPrefs.GetInt("LastPlayed", 0);
 	}
 
-	public void ClearProgress() {
-		PlayerPrefs.SetInt("LastPlayed", 0);
+    public void ClearProgress() {
+        for (int level = 1; level <= 10; level++) {
+            PlayerPrefs.SetInt("Level" + level + "Stars", 0);
+        }
+        PlayerPrefs.SetInt("LastPlayed", 0);
 	}
 
 	public void ResetScene() {

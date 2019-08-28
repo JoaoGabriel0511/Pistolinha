@@ -30,6 +30,7 @@ public class LevelSelectionButton : MonoBehaviour
         if (!locked) {
             stageSelectPanel.SetActive(true);
             stageSelectPanel.GetComponent<stagePanel>().level = levelNro;
+            stageSelectPanel.GetComponent<stagePanel>().SetPanel();
         }
     }
 }
