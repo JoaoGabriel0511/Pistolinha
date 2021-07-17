@@ -6,11 +6,10 @@ using TMPro;
 
 public class LevelSelectionButton : MonoBehaviour
 {
-    [SerializeField] int levelNro;
-    [SerializeField] Sprite lockedSprite;
-    [SerializeField] Sprite unlockedSprite;
-    [SerializeField] GameObject stageSelectPanel;
-    int index = -1;
+    [SerializeField] int levelNro = 0;
+    [SerializeField] Sprite lockedSprite = null;
+    [SerializeField] Sprite unlockedSprite = null;
+    [SerializeField] UIStageSelectionPanel stageSelectionPanel = null;
     bool locked = true;
 
     void Start()
@@ -28,8 +27,7 @@ public class LevelSelectionButton : MonoBehaviour
     public void OnClick()
     {
         if (!locked) {
-            stageSelectPanel.SetActive(true);
-            stageSelectPanel.GetComponent<stagePanel>().level = levelNro;
+            stageSelectionPanel.OpenPanel(levelNro);
         }
     }
 }
