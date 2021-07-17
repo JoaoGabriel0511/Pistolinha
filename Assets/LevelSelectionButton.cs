@@ -15,7 +15,7 @@ public class LevelSelectionButton : MonoBehaviour
 
     void Start()
     {
-        if(GameManager.Instance.LastPlayed() >= levelNro)
+        if(GameManager.Instance.UnlockedLevel() >= levelNro)
         {
             GetComponent<Image>().sprite = unlockedSprite;
             locked = false;

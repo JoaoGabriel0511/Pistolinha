@@ -5,7 +5,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
+	const int MAX_LEVEL = 10;
+	
 	public static GameManager Instance;
+	public int CurrentLevel => currentLevel;
+	int currentLevel;
 
 	void Awake() {
 		if (Instance == null) {
@@ -17,14 +21,7 @@ public class GameManager : MonoBehaviour {
 		}
 	}
 
-	// Start is called before the first frame update
 	void Start() {
-		/*
-        BGMusic = FMODUnity.RuntimeManager.CreateInstance(BGEvent);
-        BGMusic.set3DAttributes(FMODUnity.RuntimeUtils.To3DAttributes(gameObject));
-        BGMusic.start();
-        */
-
 #if UNITY_ANDROID
 		Debug.Log("Android");
 		Screen.SetResolution(540, 960, false);
@@ -36,29 +33,35 @@ public class GameManager : MonoBehaviour {
 		Screen.SetResolution(360, 640, false);
 #endif
 
-		SceneManager.LoadScene("TitleScreen", LoadSceneMode.Additive);
+		currentLevel = SaveManager.Instance.GetUnlockedLevel() > MAX_LEVEL ? MAX_LEVEL : SaveManager.Instance.GetUnlockedLevel();
 		SceneManager.sceneLoaded += OnSceneLoaded;
-	}
-
-	internal void LoadSameLevel() {
-		int currentLevel = int.Parse(SceneManager.GetActiveScene().name.Remove(0, "Level".Length));
-		LoadScene("Level" + (currentLevel));
+		SceneManager.LoadScene("TitleScreen", LoadSceneMode.Additive);
 	}
 
 	void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
-		if (scene.name != "GameGUI") SceneManager.SetActiveScene(scene);
-
-		//if (scene.name.Contains("Level")) SceneManager.LoadScene("GameGUI");
+		if (scene.name != "GameGUI") SceneManager.SetActiveScene(scene); // Prevent the manager scene from being unloaded when loading a new scene.
 	}
 
-	public void StartGame() {
-		// LoadScene("LoadingScreen");
-		Debug.Log(PlayerPrefs.GetInt("LastPlayed", 0));
+	public void StartGame() { // Start game button.
+		Debug.Log(UnlockedLevel());
 		Debug.Log("start game");
-		if (LastPlayed() == 0) {
-			StageCleared(0);
-		}
 		LoadScene("StageSelectionW1");
+	}
+
+	#region Scene loading
+
+	public void LoadScene(string scene) {
+		UnloadActiveScene();
+		if (scene.Contains("Level")) {
+			int __level;
+			int.TryParse(scene.Remove(0, "Level".Length), out __level);
+			currentLevel = __level;
+			SceneManager.LoadScene("GameGUI", LoadSceneMode.Additive);
+			SceneManager.LoadScene(scene, LoadSceneMode.Additive);
+		}
+		else {
+			SceneManager.LoadScene(scene, LoadSceneMode.Additive);
+		}
 	}
 
 	public void UnloadActiveScene() {
@@ -71,67 +74,26 @@ public class GameManager : MonoBehaviour {
 		SceneManager.UnloadSceneAsync(scene.buildIndex);
 	}
 
-	public void LoadScene(string scene) {
-		//SceneManager.LoadScene(scene, LoadSceneMode.Single);
-		UnloadActiveScene();
-		if (scene.Contains("Level")) {
-			int level;
-			int.TryParse(scene.Remove(0, "Level".Length), out level);
-			if (level > PlayerPrefs.GetInt("LastPlayed")) {
-				PlayerPrefs.SetInt("LastPlayed", level);
-			}
-			//StartCoroutine(LoadSceneAsync(scene));
-			SceneManager.LoadScene("GameGUI", LoadSceneMode.Additive);
-			SceneManager.LoadScene(scene, LoadSceneMode.Additive);
-		}
-		else {
-			SceneManager.LoadScene(scene, LoadSceneMode.Additive);
-		}
-	}
+	#endregion
 
-	public IEnumerator LoadSceneAsync(string scene) {
-		AsyncOperation operation = SceneManager.LoadSceneAsync(scene, LoadSceneMode.Additive);
-		while (!operation.isDone) {
-			yield return null;
-		}
-		SceneManager.LoadScene("GameGUI", LoadSceneMode.Additive);
-	}
+	#region Load specific scene
 
-	public int LastPlayed() {
-		return PlayerPrefs.GetInt("LastPlayed", 0);
+	public void LoadSameLevel() {
+		LoadScene("Level" + CurrentLevel.ToString());
 	}
-
-	public void ClearProgress() {
-		PlayerPrefs.SetInt("LastPlayed", 0);
-	}
-
-	public void ResetScene() {
-		LoadScene(SceneManager.GetActiveScene().name);
-	}
-
-	public void StageCleared() {
-		int stage = int.Parse(SceneManager.GetActiveScene().name.Remove(0, "Level".Length));
-		if (stage == PlayerPrefs.GetInt("LastPlayed")) {
-			PlayerPrefs.SetInt("LastPlayed", stage + 1);
-		}
-	}
-
-	public void StageCleared(int zero) {
-		PlayerPrefs.SetInt("LastPlayed", 1);
-		//PlayerPrefs.SetInt("LastPlayed", zero);
-	}
-
+	
 	public void LoadNextLevel() {
-		int currentLevel = int.Parse(SceneManager.GetActiveScene().name.Remove(0, "Level".Length));
-		if (currentLevel < 10)
-			LoadScene("Level" + (currentLevel + 1));
+		if (CurrentLevel < MAX_LEVEL)
+		{
+			LoadScene("Level" + (CurrentLevel + 1));
+		}
 		else {
 			LoadScene("StageSelectionW1");
 		}
 	}
 
-	public void LoadWorldSelect() {
-		LoadScene("WorldSelect");
+	public void ResetScene() {
+		LoadScene(SceneManager.GetActiveScene().name);
 	}
 
 	public void LoadTitleScreen() {
@@ -144,5 +106,22 @@ public class GameManager : MonoBehaviour {
 
 	public void LoadCredits() {
 		LoadScene("Credits");
+	}
+
+	#endregion
+
+	public int UnlockedLevel() {
+		return SaveManager.Instance.GetUnlockedLevel();
+	}
+
+	public void ClearProgress() {
+		SaveManager.Instance.ClearSave();
+	}
+
+	public void StageCleared() {
+		if (CurrentLevel == SaveManager.Instance.GetUnlockedLevel()) 
+		{
+			SaveManager.Instance.SetUnlockedLevel(CurrentLevel + 1);
+		}
 	}
 }

@@ -1,21 +1,17 @@
-﻿using UnityEngine.UI;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class QuitButton : MonoBehaviour {
-	Button btn;
-
 	void Start() {
-		btn = GetComponent<Button>();
-
-		if (!btn) {
-			Debug.Log("Button component doesn't exist!");
-		}
-		else {
-			btn.onClick.AddListener(QuitGame);
-		}
+		#if UNITY_WEBGL
+			gameObject.SetActive(false);
+		#endif
 	}
 
-	void QuitGame() {
-		Application.Quit();
+	public void QuitGame() {
+		#if UNITY_EDITOR
+        	UnityEditor.EditorApplication.isPlaying = false;
+		#else
+			Application.Quit();
+		#endif
 	}
 }
