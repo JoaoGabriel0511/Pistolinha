@@ -9,6 +9,8 @@ public class GameManager : MonoBehaviour {
 	
 	public static GameManager Instance;
 	public int CurrentLevel => currentLevel;
+
+	[SerializeField] GameObject loadingScreenObject = null;
 	int currentLevel;
 
 	void Awake() {
@@ -34,11 +36,13 @@ public class GameManager : MonoBehaviour {
 #endif
 
 		currentLevel = SaveManager.Instance.GetUnlockedLevel() > MAX_LEVEL ? MAX_LEVEL : SaveManager.Instance.GetUnlockedLevel();
+		loadingScreenObject.SetActive(true);
 		SceneManager.sceneLoaded += OnSceneLoaded;
 		SceneManager.LoadScene("TitleScreen", LoadSceneMode.Additive);
 	}
 
 	void OnSceneLoaded(Scene scene, LoadSceneMode mode) {
+		loadingScreenObject.SetActive(false);
 		if (scene.name != "GameGUI") SceneManager.SetActiveScene(scene); // Prevent the manager scene from being unloaded when loading a new scene.
 	}
 
