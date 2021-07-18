@@ -1344,8 +1344,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0.022644043, y: 100.60004}
-  m_SizeDelta: {x: 1708.0454, y: 201.11584}
+  m_AnchoredPosition: {x: -14.4, y: 100.60004}
+  m_SizeDelta: {x: 2006.4277, y: 201.11584}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &387142396
 MonoBehaviour:
@@ -2311,8 +2311,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0.022644043, y: 234.20001}
-  m_SizeDelta: {x: 1708.0454, y: 468.3341}
+  m_AnchoredPosition: {x: -14.4, y: 234.20001}
+  m_SizeDelta: {x: 2006.4277, y: 468.3341}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &929792462
 MonoBehaviour:
@@ -2385,8 +2385,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0.022644043, y: 188.89996}
-  m_SizeDelta: {x: 1708.0454, y: 377.891}
+  m_AnchoredPosition: {x: -14.4, y: 188.89996}
+  m_SizeDelta: {x: 2006.4277, y: 377.891}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1034062482
 MonoBehaviour:
@@ -4255,6 +4255,7 @@ GameObject:
   - component: {fileID: 1370209487}
   - component: {fileID: 1370209486}
   - component: {fileID: 1370209485}
+  - component: {fileID: 1370209488}
   m_Layer: 5
   m_Name: BG
   m_TagString: Untagged
@@ -4345,6 +4346,25 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!95 &1370209488
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1370209483}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 22100000, guid: bc57ed3a155d833438314329268fcef5, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1433055715
 GameObject:
   m_ObjectHideFlags: 0
