@@ -56,7 +56,7 @@ public class GameManager : MonoBehaviour {
 			{
 				redirectToCredits = false;
 				SaveManager.Instance.SetShowedGameConclusion(true);
-				LoadCredits();
+				LoadGameEnd();
 				return;
 			}
 			SceneManager.LoadScene(scene, LoadSceneMode.Additive);
@@ -105,6 +105,10 @@ public class GameManager : MonoBehaviour {
 
 	public void LoadCredits() {
 		LoadScene("Credits");
+	}
+
+	public void LoadGameEnd() {
+		LoadScene("GameEnd");
 	}
 
 	#endregion

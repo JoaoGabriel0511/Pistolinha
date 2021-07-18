@@ -555,7 +555,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootsFor1Star: 36
   shootsFor2Stars: 24
-  shootsFor3Stars: 13
+  shootsFor3Stars: 14
 --- !u!1001 &1745096936
 PrefabInstance:
   m_ObjectHideFlags: 0
