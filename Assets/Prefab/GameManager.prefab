@@ -1077,6 +1077,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 036aa8d66be2efe45951dbcd3e27add3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameAudioMixer: {fileID: 24100000, guid: d17dda599ca5a9c418c370aa967b4396, type: 2}
   menuAudioSnapshot: {fileID: 24500006, guid: d17dda599ca5a9c418c370aa967b4396, type: 2}
   gameplayAudioSnapshot: {fileID: 1750560907295312872, guid: d17dda599ca5a9c418c370aa967b4396,
     type: 2}
