@@ -25,17 +25,6 @@ public class GameManager : MonoBehaviour {
 	}
 
 	void Start() {
-#if UNITY_ANDROID
-		Debug.Log("Android");
-		Screen.SetResolution(540, 960, false);
-#elif UNITY_STANDALONE_WIN
-		Debug.Log("Windows");
-		Screen.SetResolution(360, 640, false);
-#else
-		Debug.Log("Other platforms");
-		Screen.SetResolution(360, 640, false);
-#endif
-
 		currentLevel = SaveManager.Instance.GetUnlockedLevel() > MAX_LEVEL ? MAX_LEVEL : SaveManager.Instance.GetUnlockedLevel();
 		loadingScreenObject.SetActive(true);
 		SceneManager.sceneLoaded += OnSceneLoaded;
