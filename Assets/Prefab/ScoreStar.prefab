@@ -88,5 +88,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   starImage: {fileID: 499813725448852490}
-  emptySprite: {fileID: 21300000, guid: f6e37a9665718294ab82bf8fc3407a96, type: 3}
+  emptySprite: {fileID: 21300000, guid: 86d76f94186ee044fbbfd1664c25bb00, type: 3}
   fullSprite: {fileID: 21300000, guid: 6a9ef92ca797ff84db22324d622a5b79, type: 3}
