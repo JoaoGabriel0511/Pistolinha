@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour {
 
 	[SerializeField] GameObject loadingScreenObject = null;
 	int currentLevel;
+	bool redirectToCredits = false;
 
 	void Awake() {
 		if (Instance == null) {
@@ -62,6 +63,13 @@ public class GameManager : MonoBehaviour {
 			SceneManager.LoadScene(scene, LoadSceneMode.Additive);
 		}
 		else {
+			if (redirectToCredits) 
+			{
+				redirectToCredits = false;
+				SaveManager.Instance.SetShowedGameConclusion(true);
+				LoadCredits();
+				return;
+			}
 			SceneManager.LoadScene(scene, LoadSceneMode.Additive);
 		}
 	}
@@ -128,6 +136,13 @@ public class GameManager : MonoBehaviour {
 		if (p_score > SaveManager.Instance.GetLevelScore(CurrentLevel)) 
 		{
 			SaveManager.Instance.SetLevelScore(CurrentLevel, p_score);
+		}
+		if (CurrentLevel == MAX_LEVEL) 
+		{
+			if (!SaveManager.Instance.GetShowedGameConclusion()) 
+			{
+				redirectToCredits = true;
+			}
 		}
 	}
 }

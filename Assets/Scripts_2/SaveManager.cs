@@ -8,6 +8,7 @@ public class SaveManager : MonoBehaviour
     const string KEY_LAST_PLAYED_LEVEL = "LastPlayedLevel";
     const string KEY_LEVEL_SCORE = "LevelScore_";
     const string MASTER_VOLUME = "MasterVolume";
+    const string SHOWED_GAME_CONCLUSION = "ShowedGameConclusion";
     
     public static SaveManager Instance;
 
@@ -56,6 +57,17 @@ public class SaveManager : MonoBehaviour
     public float GetMasterVolume()
     {
         return PlayerPrefs.GetFloat(MASTER_VOLUME, 0.5f);
+    }
+
+    public void SetShowedGameConclusion(bool p_showed) 
+    {
+        PlayerPrefs.SetInt(SHOWED_GAME_CONCLUSION, p_showed ? 1 : 0);
+        PlayerPrefs.Save();
+    }
+
+    public bool GetShowedGameConclusion()
+    {
+        return PlayerPrefs.GetInt(SHOWED_GAME_CONCLUSION, 0) == 1 ? true : false;
     }
 
     public void ClearSave() 
