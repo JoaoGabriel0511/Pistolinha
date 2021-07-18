@@ -8,8 +8,12 @@ public class UIStageClearPanel : MonoBehaviour
     [SerializeField] List<UIScoreStar> scoreStars = new List<UIScoreStar>();
     [SerializeField] AudioClip victorySFX = null;
     [SerializeField] AudioMixerGroup sfxMixerGroup = null;
+    [SerializeField] float timeToShow = 0.5f;
+    [SerializeField] GameObject panelBG = null;
+    [SerializeField] GameObject panelElements = null;
 
     LevelManager levelManager;
+    bool ended = false;
 
     public void LoadLevelSelect() {
 		GameManager.Instance.LoadWorld1();
@@ -26,14 +30,26 @@ public class UIStageClearPanel : MonoBehaviour
     void Start() 
     {
         FindObjectOfType<LevelManager>().StageCleared += OnStageCleared;
-		gameObject.SetActive(false);
+        panelBG.SetActive(false);
+        panelElements.SetActive(false);
     }
 
     void OnStageCleared(int p_score) 
     {
+        if (!ended) 
+        {
+            ended = true;
+            StartCoroutine(ShowPanel(p_score));
+        }
+    }
+
+    IEnumerator ShowPanel(int p_score) 
+    {
+        yield return new WaitForSeconds(timeToShow);
         SetScoreStars(p_score);
         SoundManager.Instance.PlaySFX(victorySFX, sfxMixerGroup);
-		gameObject.SetActive(true);
+		panelBG.SetActive(true);
+        panelElements.SetActive(true);
     }
 
     void SetScoreStars(int p_score) 

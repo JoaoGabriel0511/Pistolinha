@@ -910,6 +910,9 @@ MonoBehaviour:
   victorySFX: {fileID: 8300000, guid: ac75f109432b66c4fad7870a1ed448dd, type: 3}
   sfxMixerGroup: {fileID: -798326573049013244, guid: d17dda599ca5a9c418c370aa967b4396,
     type: 2}
+  timeToShow: 0.3
+  panelBG: {fileID: 1382158716}
+  panelElements: {fileID: 650600014}
 --- !u!224 &270230222
 RectTransform:
   m_ObjectHideFlags: 0
