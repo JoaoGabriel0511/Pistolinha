@@ -1,10 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class UIStageClearPanel : MonoBehaviour
 {
     [SerializeField] List<UIScoreStar> scoreStars = new List<UIScoreStar>();
+    [SerializeField] AudioClip victorySFX = null;
+    [SerializeField] AudioMixerGroup sfxMixerGroup = null;
 
     LevelManager levelManager;
 
@@ -29,6 +32,7 @@ public class UIStageClearPanel : MonoBehaviour
     void OnStageCleared(int p_score) 
     {
         SetScoreStars(p_score);
+        SoundManager.Instance.PlaySFX(victorySFX, sfxMixerGroup);
 		gameObject.SetActive(true);
     }
 
