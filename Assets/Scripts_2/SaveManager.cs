@@ -7,6 +7,8 @@ public class SaveManager : MonoBehaviour
     const string KEY_UNLOCKED_LEVEL = "UnlockedLevel";
     const string KEY_LAST_PLAYED_LEVEL = "LastPlayedLevel";
     const string KEY_LEVEL_SCORE = "LevelScore_";
+    const string MASTER_VOLUME = "MasterVolume";
+    const string SHOWED_GAME_CONCLUSION = "ShowedGameConclusion";
     
     public static SaveManager Instance;
 
@@ -44,6 +46,28 @@ public class SaveManager : MonoBehaviour
     public int GetLevelScore(int p_level) 
     {
         return PlayerPrefs.GetInt(KEY_LEVEL_SCORE + p_level.ToString(), 0);
+    }
+
+    public void SetMasterVolume(float p_volume) 
+    {
+        PlayerPrefs.SetFloat(MASTER_VOLUME, p_volume);
+        PlayerPrefs.Save();
+    }
+
+    public float GetMasterVolume()
+    {
+        return PlayerPrefs.GetFloat(MASTER_VOLUME, 0.5f);
+    }
+
+    public void SetShowedGameConclusion(bool p_showed) 
+    {
+        PlayerPrefs.SetInt(SHOWED_GAME_CONCLUSION, p_showed ? 1 : 0);
+        PlayerPrefs.Save();
+    }
+
+    public bool GetShowedGameConclusion()
+    {
+        return PlayerPrefs.GetInt(SHOWED_GAME_CONCLUSION, 0) == 1 ? true : false;
     }
 
     public void ClearSave() 

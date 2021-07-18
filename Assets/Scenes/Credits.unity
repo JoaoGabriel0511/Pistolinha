@@ -401,9 +401,9 @@ RectTransform:
   m_Father: {fileID: 881972409}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6.8, y: -316}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: -6.8, y: 164}
   m_SizeDelta: {x: 1915.6093, y: 268.36465}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &403768541
@@ -475,9 +475,9 @@ RectTransform:
   m_Father: {fileID: 881972409}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6.8, y: -443}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: -6.8, y: 37}
   m_SizeDelta: {x: 1915.6093, y: 268.4119}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &529306418
@@ -1054,7 +1054,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1596020190}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1596020192
 Camera:
   m_ObjectHideFlags: 0
@@ -1364,9 +1364,9 @@ RectTransform:
   m_Father: {fileID: 881972409}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6.8, y: -393}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: -6.8, y: 87}
   m_SizeDelta: {x: 1915.6093, y: 268.36465}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2104038337
