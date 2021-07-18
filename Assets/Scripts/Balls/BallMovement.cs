@@ -101,10 +101,8 @@ public class BallMovement : MonoBehaviour {
 		_ballAttr.SetColiding(false);
 		GetComponent<Rigidbody2D>().velocity = new Vector2(0, 0);
 
-		//  change for audioSource
-		//_audioEmitter.ChangeSound((int)Sound.DEATH);
-		//_audioEmitter.PlaySound();
-		//_animator.SetBool("explodeWall", true);
+		// explosion particle.
+		Instantiate(_ballAttr.explosionParticle, transform.position, Quaternion.identity);
 
 		Destroy(transform.gameObject);
 		yield break;

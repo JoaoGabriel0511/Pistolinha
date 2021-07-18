@@ -33,16 +33,14 @@ public class Goal : MonoBehaviour {
 	}
 
 	public virtual void OnTriggerEnter2D(Collider2D other) {
-		Debug.Log("AQUI1");
 		if (other.GetComponent<BallAttribute>()) {
-			Debug.Log("AQUI2");
 			BallAttribute ball = other.GetComponent<BallAttribute>();
 			if (ball.GetColor() == _goalType) {
-				Debug.Log("AQUI3");
-				GameManager.Instance.StageCleared();
 				StageCleared?.Invoke();
 				_spriteRenderer.color = Color.yellow;
 			}
+			Instantiate(ball.explosionParticle, transform.position, Quaternion.identity);
+			Destroy(ball.gameObject);
 		}
 	}
 }

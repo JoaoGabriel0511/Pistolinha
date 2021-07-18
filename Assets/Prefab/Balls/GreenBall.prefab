@@ -50,6 +50,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ballType: 1
   speed: 7
+  explosionParticle: {fileID: 3818220497861472085, guid: f65bdcf99cf91b44eb0cf2dfe12096d0,
+    type: 3}
   collisionBehaviour: {fileID: 11400000, guid: 6181c7a03d203464282f186aab217843, type: 2}
 --- !u!114 &6312395905542271551
 MonoBehaviour:
@@ -246,6 +248,7 @@ SpriteRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:

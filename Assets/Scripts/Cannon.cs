@@ -116,7 +116,6 @@ public class Cannon : MonoBehaviour {
 		//yield return new WaitForSeconds(0.175f);
 
 		BallMovement ball;
-		Debug.Log(selectedColor);
 		switch (selectedColor) {
 			case Constants.Type.RED:
 				ball = Instantiate(redBallPrefab, transform.position, Quaternion.identity).GetComponent<BallMovement>();

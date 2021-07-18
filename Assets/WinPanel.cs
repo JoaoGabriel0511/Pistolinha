@@ -4,18 +4,15 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 public class WinPanel : MonoBehaviour {
-	// Start is called before the first frame update
 	private int shootCount;
 	void Start() {
 		FindObjectOfType<Goal>().StageCleared.AddListener(() => {
-			Debug.Log("Acabou sim");
 			OnStageCleared();
 		});
 		gameObject.SetActive(false);
 	}
 
 	void OnStageCleared() {
-		Debug.Log("ACABOU");
 		shootCount = FindObjectOfType<LevelManager>().GetShootCount();
 		if (shootCount < FindObjectOfType<LevelManager>().GetShootsFor1Star()) {
 			gameObject.transform.Find("victory screen").gameObject.transform.Find("Star1").gameObject.SetActive(true);
@@ -37,7 +34,7 @@ public class WinPanel : MonoBehaviour {
 	}
 
 	public void LoadMap() {
-		GameManager.Instance.LoadScene("StageSelectionW1");
+		GameManager.Instance.LoadWorld1();
 	}
 
 	public void LoadSameLevel() {
