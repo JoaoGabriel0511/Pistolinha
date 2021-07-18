@@ -5,6 +5,7 @@ using UnityEngine;
 public class BallAttribute : MonoBehaviour, IColorful {
 	[SerializeField] Constants.Type ballType;
 	[SerializeField] float speed;
+	public GameObject explosionParticle = null;
     public BallCollisionBehaviour collisionBehaviour;
 	bool _isColiding;
     

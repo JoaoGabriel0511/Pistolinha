@@ -47,8 +47,6 @@ public class GameManager : MonoBehaviour {
 	}
 
 	public void StartGame() { // Start game button.
-		Debug.Log(UnlockedLevel());
-		Debug.Log("start game");
 		LoadScene("StageSelectionW1");
 	}
 
@@ -122,10 +120,14 @@ public class GameManager : MonoBehaviour {
 		SaveManager.Instance.ClearSave();
 	}
 
-	public void StageCleared() {
+	public void StageCleared(int p_score) {
 		if (CurrentLevel == SaveManager.Instance.GetUnlockedLevel()) 
 		{
 			SaveManager.Instance.SetUnlockedLevel(CurrentLevel + 1);
+		}
+		if (p_score > SaveManager.Instance.GetLevelScore(CurrentLevel)) 
+		{
+			SaveManager.Instance.SetLevelScore(CurrentLevel, p_score);
 		}
 	}
 }
