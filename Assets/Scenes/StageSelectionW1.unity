@@ -5602,7 +5602,7 @@ GameObject:
   - component: {fileID: 1564991898}
   - component: {fileID: 1564991897}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Path
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5624,8 +5624,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.000053406, y: -49.6}
-  m_SizeDelta: {x: 540, y: 696.3221}
+  m_AnchoredPosition: {x: 0, y: -49.6}
+  m_SizeDelta: {x: 540, y: 696}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1564991897
 MonoBehaviour:
@@ -5648,7 +5648,7 @@ MonoBehaviour:
       m_Calls: []
   m_Sprite: {fileID: 21300000, guid: 929128bb2dcf89543877964496dd0c55, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
